@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.2.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
+
+  <meta name="description" content="安装vsCodeVSCode 安装C&#x2F;C++扩展安装编译环境mingw-w64mingw-w64安装完毕之后，配置环境变量，此电脑-属性-高级系统设置-环境变量-系统变量-path-添加一条D:\mingw\mingw32\bin\（你安装的编译环境的地址） 配置VScodelaunch.json 123456789101112131415161718192021222324252627&amp;#123">
+<meta property="og:type" content="article">
+<meta property="og:title" content="VSCode配置C&#x2F;C++的编译环境">
+<meta property="og:url" content="http://example.com/2020/09/26/VSCode%E9%85%8D%E7%BD%AEC-C++%E7%9A%84%E7%BC%96%E8%AF%91%E7%8E%AF%E5%A2%83/index.html">
+<meta property="og:site_name" content="程序人生">
+<meta property="og:description" content="安装vsCodeVSCode 安装C&#x2F;C++扩展安装编译环境mingw-w64mingw-w64安装完毕之后，配置环境变量，此电脑-属性-高级系统设置-环境变量-系统变量-path-添加一条D:\mingw\mingw32\bin\（你安装的编译环境的地址） 配置VScodelaunch.json 123456789101112131415161718192021222324252627&amp;#123">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-09-26T04:12:57.000Z">
+<meta property="article:modified_time" content="2020-10-23T09:32:01.427Z">
+<meta property="article:author" content="gtt1025">
+<meta property="article:tag" content="VSCode">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="http://example.com/2020/09/26/VSCode%E9%85%8D%E7%BD%AEC-C++%E7%9A%84%E7%BC%96%E8%AF%91%E7%8E%AF%E5%A2%83/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>VSCode配置C/C++的编译环境 | 程序人生</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">程序人生</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">博客日志</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2020/09/26/VSCode%E9%85%8D%E7%BD%AEC-C++%E7%9A%84%E7%BC%96%E8%AF%91%E7%8E%AF%E5%A2%83/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/gtt.jpg">
+      <meta itemprop="name" content="gtt1025">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="程序人生">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          VSCode配置C/C++的编译环境
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-09-26 12:12:57" itemprop="dateCreated datePublished" datetime="2020-09-26T12:12:57+08:00">2020-09-26</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-10-23 17:32:01" itemprop="dateModified" datetime="2020-10-23T17:32:01+08:00">2020-10-23</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%B7%A5%E5%85%B7%E9%83%A8%E7%BD%B2/" itemprop="url" rel="index"><span itemprop="name">工具部署</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <h2 id="安装vsCode"><a href="#安装vsCode" class="headerlink" title="安装vsCode"></a>安装vsCode</h2><p><a target="_blank" rel="noopener" href="https://code.visualstudio.com/">VSCode</a></p>
+<h2 id="安装C-C-扩展"><a href="#安装C-C-扩展" class="headerlink" title="安装C/C++扩展"></a>安装C/C++扩展</h2><h2 id="安装编译环境mingw-w64"><a href="#安装编译环境mingw-w64" class="headerlink" title="安装编译环境mingw-w64"></a>安装编译环境mingw-w64</h2><p><a target="_blank" rel="noopener" href="http://www.mingw-w64.org/doku.php/download">mingw-w64</a><br>安装完毕之后，配置环境变量，此电脑-属性-高级系统设置-环境变量-系统变量-path-添加一条D:\mingw\mingw32\bin\（你安装的编译环境的地址）</p>
+<h2 id="配置VScode"><a href="#配置VScode" class="headerlink" title="配置VScode"></a>配置VScode</h2><p>launch.json</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    &quot;version&quot;: &quot;0.2.0&quot;,</span><br><span class="line">    &quot;configurations&quot;: [</span><br><span class="line"></span><br><span class="line">        &#123;</span><br><span class="line">            &quot;name&quot;: &quot;(gdb) Launch&quot;,    &#x2F;&#x2F; 配置名称，将会在启动配置的下拉菜单中显示</span><br><span class="line">            &quot;type&quot;: &quot;cppdbg&quot;,         &#x2F;&#x2F; 配置类型，这里只能为cppdbg</span><br><span class="line">            &quot;request&quot;: &quot;launch&quot;,    &#x2F;&#x2F; 请求配置类型，可以为launch（启动）或attach（附加）</span><br><span class="line">            &quot;program&quot;: &quot;$&#123;workspaceRoot&#125;&#x2F;$&#123;fileBasenameNoExtension&#125;.exe&quot;,&#x2F;&#x2F; 将要进行调试的程序的路径</span><br><span class="line">            &quot;args&quot;: [],                &#x2F;&#x2F; 程序调试时传递给程序的命令行参数，一般设为空即可</span><br><span class="line">            &quot;stopAtEntry&quot;: false,     &#x2F;&#x2F; 设为true时程序将暂停在程序入口处，一般设置为false</span><br><span class="line">            &quot;cwd&quot;: &quot;$&#123;workspaceRoot&#125;&quot;,&#x2F;&#x2F; 调试程序时的工作目录，一般为$&#123;workspaceRoot&#125;即代码所在目录</span><br><span class="line">            &quot;environment&quot;: [],</span><br><span class="line">            &quot;externalConsole&quot;: true,&#x2F;&#x2F; 调试时是否显示控制台窗口，一般设置为true显示控制台</span><br><span class="line">            &quot;MIMode&quot;: &quot;gdb&quot;,</span><br><span class="line">            &quot;miDebuggerPath&quot;: &quot;D:\\MinGW\\bin\\gdb.exe&quot;,&#x2F;&#x2F; miDebugger的路径，注意这里要与MinGw的路径对应</span><br><span class="line">            &quot;preLaunchTask&quot;: &quot;g++&quot;,    &#x2F;&#x2F; 调试会话开始前执行的任务，一般为编译程序，c++为g++, c为gcc</span><br><span class="line">            &quot;setupCommands&quot;: [</span><br><span class="line">                &#123;</span><br><span class="line">                    &quot;description&quot;: &quot;Enable pretty-printing for gdb&quot;,</span><br><span class="line">                    &quot;text&quot;: &quot;-enable-pretty-printing&quot;,</span><br><span class="line">                    &quot;ignoreFailures&quot;: true</span><br><span class="line">                &#125;</span><br><span class="line">            ]</span><br><span class="line">        &#125;</span><br><span class="line">    ]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>task.json</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">        &quot;version&quot;: &quot;2.0.0&quot;,</span><br><span class="line">        &quot;command&quot;: &quot;g++&quot;,</span><br><span class="line">        &quot;args&quot;: [</span><br><span class="line">            &quot;-g&quot;,</span><br><span class="line">            &quot;$&#123;file&#125;&quot;,</span><br><span class="line">            &quot;-o&quot;,</span><br><span class="line">            &quot;$&#123;fileDirname&#125;&#x2F;$&#123;fileBasenameNoExtension&#125;.exe&quot;</span><br><span class="line">        ],</span><br><span class="line">        &quot;problemMatcher&quot;: &#123;</span><br><span class="line">            &quot;owner&quot;: &quot;cpp&quot;,</span><br><span class="line">            &quot;fileLocation&quot;: [</span><br><span class="line">                &quot;relative&quot;,</span><br><span class="line">                &quot;$&#123;workspaceRoot&#125;&quot;</span><br><span class="line">            ],</span><br><span class="line">            &quot;pattern&quot;: &#123;</span><br><span class="line">                &quot;regexp&quot;: &quot;^(.*):(\\d+):(\\d+):\\s+(warning|error):\\s+(.*)$&quot;,</span><br><span class="line">                &quot;file&quot;: 1,</span><br><span class="line">                &quot;line&quot;: 2,</span><br><span class="line">                &quot;column&quot;: 3,</span><br><span class="line">                &quot;severity&quot;: 4,</span><br><span class="line">                &quot;message&quot;: 5</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;,</span><br><span class="line">        &quot;group&quot;: &#123;</span><br><span class="line">            &quot;kind&quot;: &quot;build&quot;,</span><br><span class="line">            &quot;isDefault&quot;: true</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/VSCode/" rel="tag"># VSCode</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2020/09/26/%E5%B0%86hexo%E5%8D%9A%E5%AE%A2%E7%9A%84%E4%B8%BB%E9%A2%98%E6%9B%B4%E6%94%B9%E4%B8%BAnext/" rel="prev" title="将hexo博客的主题更改为next">
+      <i class="fa fa-chevron-left"></i> 将hexo博客的主题更改为next
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2020/09/26/Ubantu%E7%8E%AF%E5%A2%83%E4%B8%8BGit%E5%92%8CGithub%E7%9A%84%E5%AE%89%E8%A3%85%E4%BD%BF%E7%94%A8/" rel="next" title="Ubantu环境下Git和Github的安装使用">
+      Ubantu环境下Git和Github的安装使用 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AE%89%E8%A3%85vsCode"><span class="nav-number">1.</span> <span class="nav-text">安装vsCode</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AE%89%E8%A3%85C-C-%E6%89%A9%E5%B1%95"><span class="nav-number">2.</span> <span class="nav-text">安装C&#x2F;C++扩展</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AE%89%E8%A3%85%E7%BC%96%E8%AF%91%E7%8E%AF%E5%A2%83mingw-w64"><span class="nav-number">3.</span> <span class="nav-text">安装编译环境mingw-w64</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%85%8D%E7%BD%AEVScode"><span class="nav-number">4.</span> <span class="nav-text">配置VScode</span></a></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="gtt1025"
+      src="/images/gtt.jpg">
+  <p class="site-author-name" itemprop="name">gtt1025</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">8</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">6</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/ttg1025" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;ttg1025" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="/gtt1025@outlook.com" title="E-Mail → gtt1025@outlook.com"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+  </div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">gtt1025</span>
+</div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  <!-- 页面点击小红心 -->
+  
+      <script type="text/javascript" src="/js/clicklove.js"></script>
+  
+</body>
+</html>

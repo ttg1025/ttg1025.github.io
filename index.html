@@ -161,7 +161,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2020/10/19/test/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2020/09/26/hexo+Github%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/gtt.jpg">
@@ -175,7 +175,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2020/10/19/test/" class="post-title-link" itemprop="url">Hello World</a>
+            <a href="/2020/09/26/hexo+Github%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" class="post-title-link" itemprop="url">hexo+Github搭建个人博客</a>
         </h2>
 
         <div class="post-meta">
@@ -184,9 +184,24 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2020-10-19 21:25:30 / 修改时间：21:25:51" itemprop="dateCreated datePublished" datetime="2020-10-19T21:25:30+08:00">2020-10-19</time>
+              <time title="创建时间：2020-09-26 12:12:57" itemprop="dateCreated datePublished" datetime="2020-09-26T12:12:57+08:00">2020-09-26</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-10-23 17:31:08" itemprop="dateModified" datetime="2020-10-23T17:31:08+08:00">2020-10-23</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%B7%A5%E5%85%B7%E9%83%A8%E7%BD%B2/" itemprop="url" rel="index"><span itemprop="name">工具部署</span></a>
+                </span>
             </span>
 
           
@@ -200,19 +215,34 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+          <h2 id="所需环境"><a href="#所需环境" class="headerlink" title="所需环境"></a>所需环境</h2><p>Windows10<br>npm 6.14.6<br>node.js v12.18.4<br>git<br>hexo</p>
+<h2 id="安装Node-js"><a href="#安装Node-js" class="headerlink" title="安装Node.js"></a>安装Node.js</h2><p><a target="_blank" rel="noopener" href="https://nodejs.org/en/download/">Node.js</a><br>查看版本</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">node -v</span><br><span class="line">npm -v</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<h2 id="hexo"><a href="#hexo" class="headerlink" title="hexo"></a>hexo</h2><h3 id="安装hexo"><a href="#安装hexo" class="headerlink" title="安装hexo"></a>安装hexo</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
+<h3 id="初始化"><a href="#初始化" class="headerlink" title="初始化"></a>初始化</h3><p><font color='red'>cd</font>到一个指定目录</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init blog</span><br></pre></td></tr></table></figure>
+<p><font color='red'>blog</font>是将要建立文件夹的名字<br><font color='red'>cd</font>到<font color='red'>blog</font>下面，安装npm</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install</span><br></pre></td></tr></table></figure>
+<p>开启本地服务器</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo s</span><br></pre></td></tr></table></figure>
+<p>此时，浏览器中打开网址(默认是4000端口) <a target="_blank" rel="noopener" href="http://localhost:4000/">http://localhost:4000</a><br>至此播客一搭建成功，接下来配置github</p>
+<h2 id="配置github"><a href="#配置github" class="headerlink" title="配置github"></a>配置github</h2><p>创建名为<font color='red'>xxx.github.io</font>的仓库，README初始化也要勾上，名称要与github名称一样，你如github名称为ttg1025，那么仓库就要名为ttg1025.github.io</p>
+<p>点击<font color='red'>settings</font>，向下拉到最后有一个<font color='red'> Github Pages </font>，点击<font color='red'> choose a theme </font>选择一个主题.</p>
+<p>打开仓库添加一个index.html,随便写点内容<br>打开地址<a target="_blank" rel="noopener" href="http://ttg1025.github.io就可以看到了/">http://ttg1025.github.io就可以看到了</a></p>
+<h2 id="配置ssh-key"><a href="#配置ssh-key" class="headerlink" title="配置ssh key"></a>配置ssh key</h2><p>git教程就不再赘述</p>
+<h2 id="部署到github"><a href="#部署到github" class="headerlink" title="部署到github"></a>部署到github</h2><p>连接本地和github</p>
+<h3 id="修改根目录下的-config-yml"><a href="#修改根目录下的-config-yml" class="headerlink" title="修改根目录下的 _config.yml "></a>修改根目录下的<font color='red'> _config.yml </font></h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy: </span><br><span class="line">  type: git</span><br><span class="line">  repository: git@github.com:ttg1025&#x2F;ttg1025.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
+<h3 id="安装部署插件-hexo-deployer-git"><a href="#安装部署插件-hexo-deployer-git" class="headerlink" title="安装部署插件 hexo-deployer-git"></a>安装部署插件<font color='red'> hexo-deployer-git</font></h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
+<p>执行以下命令发布</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo d -g</span><br></pre></td></tr></table></figure>
+<p>打开地址<a target="_blank" rel="noopener" href="http://ttg1025.github.io就可以看到了/">http://ttg1025.github.io就可以看到了</a></p>
+<h2 id="绑定域名"><a href="#绑定域名" class="headerlink" title="绑定域名"></a>绑定域名</h2><h3 id="阿里云解析域名"><a href="#阿里云解析域名" class="headerlink" title="阿里云解析域名"></a>阿里云解析域名</h3><p>在阿里云购买域名后，解析域名</p>
+<h3 id="github绑定域名"><a href="#github绑定域名" class="headerlink" title="github绑定域名"></a>github绑定域名</h3><p>点击github仓库中的settings，拉到github上的Github Pages，填上购买的域名<br>点击保存后，Github Pages会自动生成一个CNAME，CNAME中填写的就是域名</p>
+<h2 id="常用指令"><a href="#常用指令" class="headerlink" title="常用指令"></a>常用指令</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">hexo new &quot;postName&quot;        &#x2F;&#x2F;新建文章</span><br><span class="line">hexo new page &quot;pageName&quot;        &#x2F;&#x2F;新建页面</span><br><span class="line">hexo g          &#x2F;&#x2F;生成静态页面至public目录</span><br><span class="line">hexo server         &#x2F;&#x2F;开启预览访问端口（默认端口4000，&#39;ctrl + c&#39;关闭server）</span><br><span class="line">hexo deploy         &#x2F;&#x2F;将.deploy目录部署到GitHub</span><br></pre></td></tr></table></figure>
+<h2 id="常用组合"><a href="#常用组合" class="headerlink" title="常用组合"></a>常用组合</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 
       
     </div>
@@ -314,6 +344,603 @@
   
   
 
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2020/09/26/hexo%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0%E5%88%86%E7%B1%BB%E3%80%81%E6%A0%87%E7%AD%BE/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/gtt.jpg">
+      <meta itemprop="name" content="gtt1025">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="程序人生">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/09/26/hexo%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0%E5%88%86%E7%B1%BB%E3%80%81%E6%A0%87%E7%AD%BE/" class="post-title-link" itemprop="url">hexo博客添加分类、标签</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-09-26 12:12:57" itemprop="dateCreated datePublished" datetime="2020-09-26T12:12:57+08:00">2020-09-26</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-10-23 17:39:18" itemprop="dateModified" datetime="2020-10-23T17:39:18+08:00">2020-10-23</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%B7%A5%E5%85%B7%E9%83%A8%E7%BD%B2/" itemprop="url" rel="index"><span itemprop="name">工具部署</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="创建”分类”标签"><a href="#创建”分类”标签" class="headerlink" title="创建”分类”标签"></a>创建”分类”标签</h2><p>进入博客根目录，执行命令</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new page categories</span><br></pre></td></tr></table></figure>
+<p>成功后，会生成index.md,打开后添加<br>type: “categories”</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: categories</span><br><span class="line">date: 2020-10-20 09:58:59</span><br><span class="line">type: &quot;categories&quot;</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+<p>给文章添加分类属性</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: Hello World</span><br><span class="line">date: 2020-09-26 12:12:57</span><br><span class="line">categories: </span><br><span class="line">- 测试</span><br><span class="line"></span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+<h2 id="创建”标签”目录"><a href="#创建”标签”目录" class="headerlink" title="创建”标签”目录"></a>创建”标签”目录</h2><p>进入博客根目录，执行命令</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new page tags</span><br></pre></td></tr></table></figure>
+<p>成功后，会生成index.md,打开后添加<br>type: “tags”</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: tags</span><br><span class="line">date: 2020-10-20 09:58:59</span><br><span class="line">type: &quot;tags&quot;</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+<p>给文章添加标签属性</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: Hello World</span><br><span class="line">date: 2020-09-26 12:12:57</span><br><span class="line">categories: </span><br><span class="line">- 测试</span><br><span class="line">tags:</span><br><span class="line">- HelloWorld</span><br><span class="line"></span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+<h2 id="添加”关于”页面"><a href="#添加”关于”页面" class="headerlink" title="添加”关于”页面"></a>添加”关于”页面</h2><p>执行命令</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new page &quot;about&quot;</span><br></pre></td></tr></table></figure>
+<p>更改主题配置文件</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">menu:</span><br><span class="line">  home: &#x2F; || fa fa-home</span><br><span class="line">  about: &#x2F;about&#x2F; || fa fa-user</span><br><span class="line">  tags: &#x2F;tags&#x2F; || fa fa-tags</span><br><span class="line">  categories: &#x2F;categories&#x2F; || fa fa-th</span><br><span class="line">  archives: &#x2F;archives&#x2F; || fa fa-archive</span><br><span class="line">  #schedule: &#x2F;schedule&#x2F; || fa fa-calendar</span><br><span class="line">  #sitemap: &#x2F;sitemap.xml || fa fa-sitemap</span><br><span class="line">  #commonweal: &#x2F;404&#x2F; || fa fa-heartbeat</span><br><span class="line">  # schedule: &#x2F;schedule&#x2F; || calendar # 日历</span><br><span class="line">  # sitemap: &#x2F;sitemap.xml || sitemap # 站点地图</span><br><span class="line">  # commonweal: &#x2F;404&#x2F; || heartbeat # 腾讯公益404</span><br></pre></td></tr></table></figure>
+<p>然后修改source/about/目录中的index.md文件即可</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2020/09/26/Ubantu+Django+Uwsgi+Nginx%E9%83%A8%E7%BD%B2%E5%8D%9A%E5%AE%A2/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/gtt.jpg">
+      <meta itemprop="name" content="gtt1025">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="程序人生">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/09/26/Ubantu+Django+Uwsgi+Nginx%E9%83%A8%E7%BD%B2%E5%8D%9A%E5%AE%A2/" class="post-title-link" itemprop="url">Ubantu+Django+Uwsgi+Nginx部署博客</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-09-26 12:12:57" itemprop="dateCreated datePublished" datetime="2020-09-26T12:12:57+08:00">2020-09-26</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-10-23 17:35:27" itemprop="dateModified" datetime="2020-10-23T17:35:27+08:00">2020-10-23</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%B7%A5%E5%85%B7%E9%83%A8%E7%BD%B2/" itemprop="url" rel="index"><span itemprop="name">工具部署</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="环境"><a href="#环境" class="headerlink" title="环境"></a>环境</h2><p>腾讯云</p>
+<p>Ubuntu 16.04.1 LTS</p>
+<p>Django2.0.8</p>
+<p>Python3.6.12</p>
+<p>Nginx1.10.3</p>
+<p>Git</p>
+<h2 id="安装Python3-6-12"><a href="#安装Python3-6-12" class="headerlink" title="安装Python3.6.12"></a>安装Python3.6.12</h2><p>博客部署需要3.6版本的Python</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">sudo su</span><br><span class="line">apt-get install software-properties-common</span><br><span class="line">add-apt-repository ppa:jonathonf&#x2F;python-3.6</span><br><span class="line">apt-get update</span><br><span class="line">apt-get install python3.6</span><br></pre></td></tr></table></figure>
+<p>使终端默认打开我们安装的python3.6</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">cd &#x2F;usr&#x2F;bin</span><br><span class="line">rm python3</span><br><span class="line">ln -s python3.6 python3</span><br></pre></td></tr></table></figure>
+<h2 id="安装pip3"><a href="#安装pip3" class="headerlink" title="安装pip3"></a>安装pip3</h2><p>安装pip用来安装Python的各种包</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">apt-get install python3-pip</span><br><span class="line">cd &#x2F;usr&#x2F;bin</span><br><span class="line">rm pip3</span><br><span class="line">ln -s pip3.6 pip3</span><br><span class="line">pip3 install --upgrade pip</span><br></pre></td></tr></table></figure>
+<h2 id="安装虚拟环境virtualenv"><a href="#安装虚拟环境virtualenv" class="headerlink" title="安装虚拟环境virtualenv"></a>安装虚拟环境virtualenv</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip3 install virtualenv</span><br></pre></td></tr></table></figure>
+<p>选择一个存放虚拟环境的目录</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cd &#x2F;home</span><br></pre></td></tr></table></figure>
+<p>创建并激活虚拟环境</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">virtualenv django</span><br><span class="line">source &#x2F;home&#x2F;django&#x2F;bin&#x2F;activate</span><br></pre></td></tr></table></figure>
+<h2 id="下载博客源码"><a href="#下载博客源码" class="headerlink" title="下载博客源码"></a>下载博客源码</h2><p>安装git</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">apt-get install git</span><br><span class="line">cd &#x2F;home&#x2F;mysite</span><br><span class="line">git init</span><br><span class="line">git remote add origin github地址</span><br><span class="line">git pull origin master</span><br></pre></td></tr></table></figure>
+<h2 id="安装网站所需的Python包"><a href="#安装网站所需的Python包" class="headerlink" title="安装网站所需的Python包"></a>安装网站所需的Python包</h2><p>首先,进入到Django虚拟环境中，使用如下命令激活环境:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">source &#x2F;home&#x2F;django&#x2F;bin&#x2F;activate</span><br></pre></td></tr></table></figure>
+<p>然后，安装Python包</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install -r requirements.txt</span><br></pre></td></tr></table></figure>
+<h2 id="安装Mysql"><a href="#安装Mysql" class="headerlink" title="安装Mysql"></a>安装Mysql</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">cd &#x2F;home</span><br><span class="line">wget https:&#x2F;&#x2F;dev.mysql.com&#x2F;get&#x2F;mysql-apt-config_0.8.12-1_all.deb</span><br><span class="line">dpkg -i mysql-apt-config_0.8.12-1_all.deb # 选择8.0即可</span><br><span class="line">apt-get update</span><br><span class="line">apt-get install mysql-server</span><br></pre></td></tr></table></figure>
+<p>创建博客的数据库，要与base.py或者settings.py中的数据库一样</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">CREATE DATABASE &#96;数据库名&#96; DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;</span><br></pre></td></tr></table></figure>
+<p>在网站根目录创建数据库</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">python manage.py makemigrations</span><br><span class="line">python manage.py migrate</span><br></pre></td></tr></table></figure>
+<p>如果出现报错，可指定具体应用，这个应用一定要添加到settings.py中的INSTALLED_APPS里</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">python manage.py makemigrations blog</span><br><span class="line">python manage.py migrate</span><br></pre></td></tr></table></figure>
+<h2 id="运行博客"><a href="#运行博客" class="headerlink" title="运行博客"></a>运行博客</h2><p>切换到根目录运行</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python manage.py runserver 0.0.0.0:80</span><br></pre></td></tr></table></figure>
+<p>0.0.0.0:80表示任意ip可访问</p>
+<h2 id="安装配置uwsgi"><a href="#安装配置uwsgi" class="headerlink" title="安装配置uwsgi"></a>安装配置uwsgi</h2><p>安装uwsgi和所需工具包</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">apt-get install python3.6-dev</span><br><span class="line">pip3 install uwsgi</span><br><span class="line">uwsgi --http :8888 --chdir &#x2F;home&#x2F;mysite&#x2F;DjangoBlog --home &#x2F;home&#x2F;django --module djangoblog.wsgi:application</span><br></pre></td></tr></table></figure>
+<blockquote>
+<ul>
+<li>–http ：用于指定端口，这里指定8888</li>
+<li>–chdir：用于指定网站根目录</li>
+<li>–home：用于指定虚拟环境地址</li>
+<li>–module：settings.py中的WSGI_APPLICATION，用于指定项目地址</li>
+</ul>
+</blockquote>
+<p>执行命令太麻烦，配置一下<br>在/home下新建mysite_uwsgi目录，然后新建Mysite.ini配置文件用来保存uwsgi的配置文件</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">cd &#x2F;home</span><br><span class="line">mkdir mysite_uwsgi</span><br><span class="line">cd mysite_uwsgi</span><br><span class="line">vim mysite.ini</span><br></pre></td></tr></table></figure>
+<p>写入下面的内容</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">[uwsgi]</span><br><span class="line">chdir &#x3D; &#x2F;home&#x2F;mysite&#x2F;djangoblog</span><br><span class="line">home &#x3D; &#x2F;home&#x2F;django</span><br><span class="line">module &#x3D; djangoblog.wsgi:application</span><br><span class="line">master &#x3D; True</span><br><span class="line">processes &#x3D; 4</span><br><span class="line">max-requests &#x3D; 5000</span><br><span class="line">harakiri &#x3D; 60</span><br><span class="line">socket &#x3D; :8888</span><br><span class="line">uid &#x3D; root</span><br><span class="line">gid &#x3D; root</span><br><span class="line">pidfile &#x3D; &#x2F;home&#x2F;mysite_uwsgi&#x2F;master.pid</span><br><span class="line">daemonize &#x3D; &#x2F;home&#x2F;mysite_uwsgi&#x2F;mysite.log</span><br><span class="line">vacuum &#x3D; True</span><br><span class="line">bufffer_size &#x3D; 66536 #缓存不能太小</span><br></pre></td></tr></table></figure>
+<p>打开uwsgi</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">uwsgi --ini &#x2F;home&#x2F;mysite_uwsgi&#x2F;mysite.ini </span><br></pre></td></tr></table></figure>
+<p>检查uwsgi是否启动成功的命令</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ps -aux | grep uwsgi</span><br></pre></td></tr></table></figure>
+<h2 id="安装配置nginx"><a href="#安装配置nginx" class="headerlink" title="安装配置nginx"></a>安装配置nginx</h2><p>安装nginx</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">apt-get install nginx</span><br></pre></td></tr></table></figure>
+<p>修改配置文件</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd &#x2F;etc&#x2F;nginx&#x2F;sites-available</span><br><span class="line">vim mysite.conf</span><br></pre></td></tr></table></figure>
+<p>写入下面内容</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">upstream django &#123;</span><br><span class="line">    server ip:8888; # for a web port socket (we&#39;ll use this first)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">server&#123;</span><br><span class="line">    listen 80;</span><br><span class="line">    server_name mysite;</span><br><span class="line">    charset utf-8;</span><br><span class="line">    client_max_body_size 75M;  #上传文件大小限制</span><br><span class="line">    </span><br><span class="line">    # 网站静态文件所在目录</span><br><span class="line">    location &#x2F;static&#123;</span><br><span class="line">        alias &#x2F;home&#x2F;mysite&#x2F;DjangoBlog&#x2F;static;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    # 上传文件所在目录</span><br><span class="line">    location &#x2F;media&#123;</span><br><span class="line">        alias &#x2F;home&#x2F;mysite&#x2F;DjangoBlog&#x2F;media;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    # 动态文件交给uwsgi处理</span><br><span class="line">    location &#x2F; &#123;</span><br><span class="line">        uwsgi_pass ip:8888;</span><br><span class="line">        include &#x2F;etc&#x2F;nginx&#x2F;uwsgi_params;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<ul>
+<li>网站静态文件所在目录一定要配置正确</li>
+<li>uwsgi和nginx通信时，要么都用socket，要么都用http；用http时，uwsgi的配置文件中要用内网ip，nignx用公网</li>
+</ul>
+</blockquote>
+<p>如果/home/mysite/DjangoBlog目录下没有static目录，配置settings.py</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 静态文件路径</span></span><br><span class="line">STATIC_URL = <span class="string">&#x27;/static/&#x27;</span></span><br><span class="line"><span class="comment">#STATIC_ROOT = os.path.join(BASE_DIR,&#x27;static/&#x27;)</span></span><br><span class="line">STATIC_ROOT = <span class="string">&#x27;F:\Python\blog\DjangoBlog\apps\blog\staic&#x27;</span></span><br><span class="line">STATICFILES_DIRS=[</span><br><span class="line">os.path.join(BASE_DIR,<span class="string">&#x27;static/&#x27;</span>)，</span><br><span class="line">]</span><br></pre></td></tr></table></figure>
+<p>然后执行,收集static文件</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python manage.py collectstatic</span><br></pre></td></tr></table></figure>
+<p>执行完毕后，再改回来</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 静态文件路径</span></span><br><span class="line">STATIC_URL = <span class="string">&#x27;/static/&#x27;</span></span><br><span class="line">STATIC_ROOT = os.path.join(BASE_DIR,<span class="string">&#x27;static/&#x27;</span>)</span><br><span class="line"><span class="comment">#STATIC_ROOT = &#x27;F:\Python\blog\DjangoBlog\apps\blog\staic&#x27;</span></span><br><span class="line">STATICFILES_DIRS=[</span><br><span class="line">os.path.join(BASE_DIR,<span class="string">&#x27;static/&#x27;</span>)，</span><br><span class="line">]</span><br></pre></td></tr></table></figure>
+<p>在sites-enabled中创建一个软连接，表示此配置文件已经启用</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ln -s &#x2F;etc&#x2F;nginx&#x2F;sites-available&#x2F;mysite.conf   &#x2F;etc&#x2F;nginx&#x2F;sites-enabled&#x2F;mysite.conf</span><br></pre></td></tr></table></figure>
+<p>修改/etc/nginx/nginx.conf，将user后面改为root<br>重启nginx</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">service nginx restart</span><br></pre></td></tr></table></figure>
+<h2 id="浏览器输入ip访问"><a href="#浏览器输入ip访问" class="headerlink" title="浏览器输入ip访问"></a>浏览器输入ip访问</h2><p><a target="_blank" rel="noopener" href="http://49.235.229.81/">49.235.229.91</a></p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2020/09/26/Ubantu%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/gtt.jpg">
+      <meta itemprop="name" content="gtt1025">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="程序人生">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/09/26/Ubantu%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/" class="post-title-link" itemprop="url">Ubantu常用命令</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-09-26 12:12:57" itemprop="dateCreated datePublished" datetime="2020-09-26T12:12:57+08:00">2020-09-26</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-10-23 17:35:47" itemprop="dateModified" datetime="2020-10-23T17:35:47+08:00">2020-10-23</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Ubantu/" itemprop="url" rel="index"><span itemprop="name">Ubantu</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="查看端口是否被占用"><a href="#查看端口是否被占用" class="headerlink" title="查看端口是否被占用"></a>查看端口是否被占用</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">netstat -tunlp|grep 8888</span><br></pre></td></tr></table></figure>
+<h2 id="关掉进程"><a href="#关掉进程" class="headerlink" title="关掉进程"></a>关掉进程</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">kill -9 进程号</span><br></pre></td></tr></table></figure>
+<h2 id="修改文件夹权限"><a href="#修改文件夹权限" class="headerlink" title="修改文件夹权限"></a>修改文件夹权限</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo chmod -R 777 &#x2F;xxx</span><br></pre></td></tr></table></figure>
+<p>未完待续…</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2020/09/26/Ubantu%E7%8E%AF%E5%A2%83%E4%B8%8BGit%E5%92%8CGithub%E7%9A%84%E5%AE%89%E8%A3%85%E4%BD%BF%E7%94%A8/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/gtt.jpg">
+      <meta itemprop="name" content="gtt1025">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="程序人生">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/09/26/Ubantu%E7%8E%AF%E5%A2%83%E4%B8%8BGit%E5%92%8CGithub%E7%9A%84%E5%AE%89%E8%A3%85%E4%BD%BF%E7%94%A8/" class="post-title-link" itemprop="url">Ubantu环境下Git和Github的安装使用</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-09-26 12:12:57" itemprop="dateCreated datePublished" datetime="2020-09-26T12:12:57+08:00">2020-09-26</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-10-23 17:36:12" itemprop="dateModified" datetime="2020-10-23T17:36:12+08:00">2020-10-23</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%B7%A5%E5%85%B7%E9%83%A8%E7%BD%B2/" itemprop="url" rel="index"><span itemprop="name">工具部署</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="Git安装"><a href="#Git安装" class="headerlink" title="Git安装"></a>Git安装</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get isntall git</span><br></pre></td></tr></table></figure>
+<h2 id="配置Git"><a href="#配置Git" class="headerlink" title="配置Git"></a>配置Git</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name &quot;Your Name&quot;</span><br><span class="line">git config --global user.email &quot;email@example.com&quot;</span><br></pre></td></tr></table></figure>
+<h2 id="下载文件"><a href="#下载文件" class="headerlink" title="下载文件"></a>下载文件</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone githu上仓库地址</span><br></pre></td></tr></table></figure>
+<h2 id="生成并添加密钥"><a href="#生成并添加密钥" class="headerlink" title="生成并添加密钥"></a>生成并添加密钥</h2><p>生成密钥</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C &quot;email@example.com&quot;</span><br></pre></td></tr></table></figure>
+<p>查看公钥</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cat ~&#x2F;.ssh&#x2F;id_rsa.pub</span><br></pre></td></tr></table></figure>
+<p>在github上添加ssh key，测试连接是否成功</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh -T git@github.com</span><br></pre></td></tr></table></figure>
+<h2 id="使用git"><a href="#使用git" class="headerlink" title="使用git"></a>使用git</h2><p>在本地文件夹初始化</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git init</span><br></pre></td></tr></table></figure>
+<p>添加文件</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git add .</span><br></pre></td></tr></table></figure>
+<p>连接远程仓库</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git remote add origin github上仓库地址</span><br></pre></td></tr></table></figure>
+<p>托付文件</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git commit -m &quot;first commit&quot;</span><br></pre></td></tr></table></figure>
+<p>提交文件</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git push origin master</span><br></pre></td></tr></table></figure>
+<p>在提交文件之前可以先拉去文件</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git pull origin master</span><br></pre></td></tr></table></figure>
+<h2 id="新建并切换分支"><a href="#新建并切换分支" class="headerlink" title="新建并切换分支"></a>新建并切换分支</h2><p>新建分支</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git branch [branch name]</span><br></pre></td></tr></table></figure>
+<p>切换分支</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git checkout [branch name]</span><br></pre></td></tr></table></figure>
+<p>将新分支push到GitHub上</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git push origin [branch name]</span><br></pre></td></tr></table></figure>
+<p>切换到主分支</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git checkout master</span><br></pre></td></tr></table></figure>
+<p>将分支合并到主分支</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git merge [branch name]</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2020/09/26/VSCode%E9%85%8D%E7%BD%AEC-C++%E7%9A%84%E7%BC%96%E8%AF%91%E7%8E%AF%E5%A2%83/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/gtt.jpg">
+      <meta itemprop="name" content="gtt1025">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="程序人生">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/09/26/VSCode%E9%85%8D%E7%BD%AEC-C++%E7%9A%84%E7%BC%96%E8%AF%91%E7%8E%AF%E5%A2%83/" class="post-title-link" itemprop="url">VSCode配置C/C++的编译环境</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-09-26 12:12:57" itemprop="dateCreated datePublished" datetime="2020-09-26T12:12:57+08:00">2020-09-26</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-10-23 17:32:01" itemprop="dateModified" datetime="2020-10-23T17:32:01+08:00">2020-10-23</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%B7%A5%E5%85%B7%E9%83%A8%E7%BD%B2/" itemprop="url" rel="index"><span itemprop="name">工具部署</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="安装vsCode"><a href="#安装vsCode" class="headerlink" title="安装vsCode"></a>安装vsCode</h2><p><a target="_blank" rel="noopener" href="https://code.visualstudio.com/">VSCode</a></p>
+<h2 id="安装C-C-扩展"><a href="#安装C-C-扩展" class="headerlink" title="安装C/C++扩展"></a>安装C/C++扩展</h2><h2 id="安装编译环境mingw-w64"><a href="#安装编译环境mingw-w64" class="headerlink" title="安装编译环境mingw-w64"></a>安装编译环境mingw-w64</h2><p><a target="_blank" rel="noopener" href="http://www.mingw-w64.org/doku.php/download">mingw-w64</a><br>安装完毕之后，配置环境变量，此电脑-属性-高级系统设置-环境变量-系统变量-path-添加一条D:\mingw\mingw32\bin\（你安装的编译环境的地址）</p>
+<h2 id="配置VScode"><a href="#配置VScode" class="headerlink" title="配置VScode"></a>配置VScode</h2><p>launch.json</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    &quot;version&quot;: &quot;0.2.0&quot;,</span><br><span class="line">    &quot;configurations&quot;: [</span><br><span class="line"></span><br><span class="line">        &#123;</span><br><span class="line">            &quot;name&quot;: &quot;(gdb) Launch&quot;,    &#x2F;&#x2F; 配置名称，将会在启动配置的下拉菜单中显示</span><br><span class="line">            &quot;type&quot;: &quot;cppdbg&quot;,         &#x2F;&#x2F; 配置类型，这里只能为cppdbg</span><br><span class="line">            &quot;request&quot;: &quot;launch&quot;,    &#x2F;&#x2F; 请求配置类型，可以为launch（启动）或attach（附加）</span><br><span class="line">            &quot;program&quot;: &quot;$&#123;workspaceRoot&#125;&#x2F;$&#123;fileBasenameNoExtension&#125;.exe&quot;,&#x2F;&#x2F; 将要进行调试的程序的路径</span><br><span class="line">            &quot;args&quot;: [],                &#x2F;&#x2F; 程序调试时传递给程序的命令行参数，一般设为空即可</span><br><span class="line">            &quot;stopAtEntry&quot;: false,     &#x2F;&#x2F; 设为true时程序将暂停在程序入口处，一般设置为false</span><br><span class="line">            &quot;cwd&quot;: &quot;$&#123;workspaceRoot&#125;&quot;,&#x2F;&#x2F; 调试程序时的工作目录，一般为$&#123;workspaceRoot&#125;即代码所在目录</span><br><span class="line">            &quot;environment&quot;: [],</span><br><span class="line">            &quot;externalConsole&quot;: true,&#x2F;&#x2F; 调试时是否显示控制台窗口，一般设置为true显示控制台</span><br><span class="line">            &quot;MIMode&quot;: &quot;gdb&quot;,</span><br><span class="line">            &quot;miDebuggerPath&quot;: &quot;D:\\MinGW\\bin\\gdb.exe&quot;,&#x2F;&#x2F; miDebugger的路径，注意这里要与MinGw的路径对应</span><br><span class="line">            &quot;preLaunchTask&quot;: &quot;g++&quot;,    &#x2F;&#x2F; 调试会话开始前执行的任务，一般为编译程序，c++为g++, c为gcc</span><br><span class="line">            &quot;setupCommands&quot;: [</span><br><span class="line">                &#123;</span><br><span class="line">                    &quot;description&quot;: &quot;Enable pretty-printing for gdb&quot;,</span><br><span class="line">                    &quot;text&quot;: &quot;-enable-pretty-printing&quot;,</span><br><span class="line">                    &quot;ignoreFailures&quot;: true</span><br><span class="line">                &#125;</span><br><span class="line">            ]</span><br><span class="line">        &#125;</span><br><span class="line">    ]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>task.json</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">        &quot;version&quot;: &quot;2.0.0&quot;,</span><br><span class="line">        &quot;command&quot;: &quot;g++&quot;,</span><br><span class="line">        &quot;args&quot;: [</span><br><span class="line">            &quot;-g&quot;,</span><br><span class="line">            &quot;$&#123;file&#125;&quot;,</span><br><span class="line">            &quot;-o&quot;,</span><br><span class="line">            &quot;$&#123;fileDirname&#125;&#x2F;$&#123;fileBasenameNoExtension&#125;.exe&quot;</span><br><span class="line">        ],</span><br><span class="line">        &quot;problemMatcher&quot;: &#123;</span><br><span class="line">            &quot;owner&quot;: &quot;cpp&quot;,</span><br><span class="line">            &quot;fileLocation&quot;: [</span><br><span class="line">                &quot;relative&quot;,</span><br><span class="line">                &quot;$&#123;workspaceRoot&#125;&quot;</span><br><span class="line">            ],</span><br><span class="line">            &quot;pattern&quot;: &#123;</span><br><span class="line">                &quot;regexp&quot;: &quot;^(.*):(\\d+):(\\d+):\\s+(warning|error):\\s+(.*)$&quot;,</span><br><span class="line">                &quot;file&quot;: 1,</span><br><span class="line">                &quot;line&quot;: 2,</span><br><span class="line">                &quot;column&quot;: 3,</span><br><span class="line">                &quot;severity&quot;: 4,</span><br><span class="line">                &quot;message&quot;: 5</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;,</span><br><span class="line">        &quot;group&quot;: &#123;</span><br><span class="line">            &quot;kind&quot;: &quot;build&quot;,</span><br><span class="line">            &quot;isDefault&quot;: true</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2020/09/26/%E5%B0%86hexo%E5%8D%9A%E5%AE%A2%E7%9A%84%E4%B8%BB%E9%A2%98%E6%9B%B4%E6%94%B9%E4%B8%BAnext/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/gtt.jpg">
+      <meta itemprop="name" content="gtt1025">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="程序人生">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/09/26/%E5%B0%86hexo%E5%8D%9A%E5%AE%A2%E7%9A%84%E4%B8%BB%E9%A2%98%E6%9B%B4%E6%94%B9%E4%B8%BAnext/" class="post-title-link" itemprop="url">将hexo博客的主题更改为next</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-09-26 12:12:57" itemprop="dateCreated datePublished" datetime="2020-09-26T12:12:57+08:00">2020-09-26</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-10-23 17:36:40" itemprop="dateModified" datetime="2020-10-23T17:36:40+08:00">2020-10-23</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%B7%A5%E5%85%B7%E9%83%A8%E7%BD%B2/" itemprop="url" rel="index"><span itemprop="name">工具部署</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="更改基本信息"><a href="#更改基本信息" class="headerlink" title="更改基本信息"></a>更改基本信息</h2><p>更改网站标题、副标题、作者、英文等</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"># Site</span><br><span class="line">title: 程序人生</span><br><span class="line">subtitle: &#39;博客日志&#39;</span><br><span class="line">description: &#39;&#39;</span><br><span class="line">keywords:</span><br><span class="line">author: gtt1025</span><br><span class="line">language: zh-CN</span><br><span class="line">timezone: &#39;&#39;</span><br></pre></td></tr></table></figure>
+<h2 id="安装next"><a href="#安装next" class="headerlink" title="安装next"></a>安装next</h2><p>在博客根目录下Git Bash</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone https:&#x2F;&#x2F;github.com&#x2F;theme-next&#x2F;hexo-theme-next themes&#x2F;next</span><br></pre></td></tr></table></figure>
+<p>打开根目录下的配置文件，将theme修改为next</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">theme: next</span><br></pre></td></tr></table></figure>
+<p>点击next目录下的配置文件，选择样式主题,这里一般选择Gemini</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"># ---------------------------------------------------------------</span><br><span class="line"># Scheme Settings</span><br><span class="line"># ---------------------------------------------------------------</span><br><span class="line"># Schemes</span><br><span class="line">#scheme: Muse</span><br><span class="line">#scheme: Mist</span><br><span class="line">#scheme: Pisces</span><br><span class="line">scheme: Gemini</span><br></pre></td></tr></table></figure>
+<h2 id="更改菜单栏"><a href="#更改菜单栏" class="headerlink" title="更改菜单栏"></a>更改菜单栏</h2><p>点击next目录下的配置文件进行修改</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">menu:</span><br><span class="line">  home: &#x2F; || fa fa-home</span><br><span class="line">  about: &#x2F;about&#x2F; || fa fa-user</span><br><span class="line">  tags: &#x2F;tags&#x2F; || fa fa-tags</span><br><span class="line">  categories: &#x2F;categories&#x2F; || fa fa-th</span><br><span class="line">  archives: &#x2F;archives&#x2F; || fa fa-archive</span><br><span class="line">  #schedule: &#x2F;schedule&#x2F; || fa fa-calendar</span><br><span class="line">  #sitemap: &#x2F;sitemap.xml || fa fa-sitemap</span><br><span class="line">  #commonweal: &#x2F;404&#x2F; || fa fa-heartbeat</span><br><span class="line">  # schedule: &#x2F;schedule&#x2F; || calendar # 日历</span><br><span class="line">  # sitemap: &#x2F;sitemap.xml || sitemap # 站点地图</span><br><span class="line">  # commonweal: &#x2F;404&#x2F; || heartbeat # 腾讯公益404</span><br></pre></td></tr></table></figure>
+<h2 id="修改社交信息"><a href="#修改社交信息" class="headerlink" title="修改社交信息"></a>修改社交信息</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">social:</span><br><span class="line">  GitHub: https:&#x2F;&#x2F;xxxx || fab fa-github</span><br><span class="line">  E-Mail:xxx@xxx.xx|| fa fa-envelope</span><br><span class="line">  #Weibo: https:&#x2F;&#x2F;weibo.com&#x2F;yourname || fab fa-weibo</span><br><span class="line">  #Google: https:&#x2F;&#x2F;plus.google.com&#x2F;yourname || fab fa-google</span><br><span class="line">  #Twitter: https:&#x2F;&#x2F;twitter.com&#x2F;yourname || fab fa-twitter</span><br><span class="line">  #FB Page: https:&#x2F;&#x2F;www.facebook.com&#x2F;yourname || fab fa-facebook</span><br><span class="line">  #StackOverflow: https:&#x2F;&#x2F;stackoverflow.com&#x2F;yourname || fab fa-stack-overflow</span><br><span class="line">  #YouTube: https:&#x2F;&#x2F;youtube.com&#x2F;yourname || fab fa-youtube</span><br><span class="line">  #Instagram: https:&#x2F;&#x2F;instagram.com&#x2F;yourname || fab fa-instagram</span><br><span class="line">  #Skype: skype:yourname?call|chat || fab fa-skype</span><br></pre></td></tr></table></figure>
+<h2 id="圆形头像设置"><a href="#圆形头像设置" class="headerlink" title="圆形头像设置"></a>圆形头像设置</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">avatar:</span><br><span class="line">  # Replace the default image and set the url here.</span><br><span class="line">  url: &#x2F;images&#x2F;gtt.jpg #头像文件目录</span><br><span class="line">  # If true, the avatar will be dispalyed in circle.</span><br><span class="line">  rounded: true</span><br><span class="line">  # If true, the avatar will be rotated with the cursor.</span><br><span class="line">  rotated: true</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
 
   
 
@@ -382,20 +1009,20 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">2</span>
+          <span class="site-state-item-count">8</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
-        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-count">3</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-count">6</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -489,6 +1116,8 @@
   
 
   <!-- 页面点击小红心 -->
+  
+      <script type="text/javascript" src="/js/clicklove.js"></script>
   
 </body>
 </html>
