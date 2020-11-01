@@ -161,7 +161,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2020/09/26/hexo+Github%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2020/11/01/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/gtt.jpg">
@@ -175,7 +175,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2020/09/26/hexo+Github%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" class="post-title-link" itemprop="url">hexo+Github搭建个人博客</a>
+            <a href="/2020/11/01/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/" class="post-title-link" itemprop="url">未命名</a>
         </h2>
 
         <div class="post-meta">
@@ -184,24 +184,9 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
+              
 
-              <time title="创建时间：2020-09-26 12:12:57" itemprop="dateCreated datePublished" datetime="2020-09-26T12:12:57+08:00">2020-09-26</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-10-23 17:31:08" itemprop="dateModified" datetime="2020-10-23T17:31:08+08:00">2020-10-23</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E5%B7%A5%E5%85%B7%E9%83%A8%E7%BD%B2/" itemprop="url" rel="index"><span itemprop="name">工具部署</span></a>
-                </span>
+              <time title="创建时间：2020-11-01 22:01:20 / 修改时间：22:01:22" itemprop="dateCreated datePublished" datetime="2020-11-01T22:01:20+08:00">2020-11-01</time>
             </span>
 
           
@@ -215,34 +200,53 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h2 id="所需环境"><a href="#所需环境" class="headerlink" title="所需环境"></a>所需环境</h2><p>Windows10<br>npm 6.14.6<br>node.js v12.18.4<br>git<br>hexo</p>
-<h2 id="安装Node-js"><a href="#安装Node-js" class="headerlink" title="安装Node.js"></a>安装Node.js</h2><p><a target="_blank" rel="noopener" href="https://nodejs.org/en/download/">Node.js</a><br>查看版本</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">node -v</span><br><span class="line">npm -v</span><br></pre></td></tr></table></figure>
-
-<h2 id="hexo"><a href="#hexo" class="headerlink" title="hexo"></a>hexo</h2><h3 id="安装hexo"><a href="#安装hexo" class="headerlink" title="安装hexo"></a>安装hexo</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
-<h3 id="初始化"><a href="#初始化" class="headerlink" title="初始化"></a>初始化</h3><p><font color='red'>cd</font>到一个指定目录</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init blog</span><br></pre></td></tr></table></figure>
-<p><font color='red'>blog</font>是将要建立文件夹的名字<br><font color='red'>cd</font>到<font color='red'>blog</font>下面，安装npm</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install</span><br></pre></td></tr></table></figure>
-<p>开启本地服务器</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo s</span><br></pre></td></tr></table></figure>
-<p>此时，浏览器中打开网址(默认是4000端口) <a target="_blank" rel="noopener" href="http://localhost:4000/">http://localhost:4000</a><br>至此播客一搭建成功，接下来配置github</p>
-<h2 id="配置github"><a href="#配置github" class="headerlink" title="配置github"></a>配置github</h2><p>创建名为<font color='red'>xxx.github.io</font>的仓库，README初始化也要勾上，名称要与github名称一样，你如github名称为ttg1025，那么仓库就要名为ttg1025.github.io</p>
-<p>点击<font color='red'>settings</font>，向下拉到最后有一个<font color='red'> Github Pages </font>，点击<font color='red'> choose a theme </font>选择一个主题.</p>
-<p>打开仓库添加一个index.html,随便写点内容<br>打开地址<a target="_blank" rel="noopener" href="http://ttg1025.github.io就可以看到了/">http://ttg1025.github.io就可以看到了</a></p>
-<h2 id="配置ssh-key"><a href="#配置ssh-key" class="headerlink" title="配置ssh key"></a>配置ssh key</h2><p>git教程就不再赘述</p>
-<h2 id="部署到github"><a href="#部署到github" class="headerlink" title="部署到github"></a>部署到github</h2><p>连接本地和github</p>
-<h3 id="修改根目录下的-config-yml"><a href="#修改根目录下的-config-yml" class="headerlink" title="修改根目录下的 _config.yml "></a>修改根目录下的<font color='red'> _config.yml </font></h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy: </span><br><span class="line">  type: git</span><br><span class="line">  repository: git@github.com:ttg1025&#x2F;ttg1025.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
-<h3 id="安装部署插件-hexo-deployer-git"><a href="#安装部署插件-hexo-deployer-git" class="headerlink" title="安装部署插件 hexo-deployer-git"></a>安装部署插件<font color='red'> hexo-deployer-git</font></h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
-<p>执行以下命令发布</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo d -g</span><br></pre></td></tr></table></figure>
-<p>打开地址<a target="_blank" rel="noopener" href="http://ttg1025.github.io就可以看到了/">http://ttg1025.github.io就可以看到了</a></p>
-<h2 id="绑定域名"><a href="#绑定域名" class="headerlink" title="绑定域名"></a>绑定域名</h2><h3 id="阿里云解析域名"><a href="#阿里云解析域名" class="headerlink" title="阿里云解析域名"></a>阿里云解析域名</h3><p>在阿里云购买域名后，解析域名</p>
-<h3 id="github绑定域名"><a href="#github绑定域名" class="headerlink" title="github绑定域名"></a>github绑定域名</h3><p>点击github仓库中的settings，拉到github上的Github Pages，填上购买的域名<br>点击保存后，Github Pages会自动生成一个CNAME，CNAME中填写的就是域名</p>
-<h2 id="常用指令"><a href="#常用指令" class="headerlink" title="常用指令"></a>常用指令</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">hexo new &quot;postName&quot;        &#x2F;&#x2F;新建文章</span><br><span class="line">hexo new page &quot;pageName&quot;        &#x2F;&#x2F;新建页面</span><br><span class="line">hexo g          &#x2F;&#x2F;生成静态页面至public目录</span><br><span class="line">hexo server         &#x2F;&#x2F;开启预览访问端口（默认端口4000，&#39;ctrl + c&#39;关闭server）</span><br><span class="line">hexo deploy         &#x2F;&#x2F;将.deploy目录部署到GitHub</span><br></pre></td></tr></table></figure>
-<h2 id="常用组合"><a href="#常用组合" class="headerlink" title="常用组合"></a>常用组合</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
-
-
+          <h1 id="机器学习"><a href="#机器学习" class="headerlink" title="机器学习"></a>机器学习</h1><p>##定义<br>关于机器学习的定义，从网上查询了一下，主要有以下几种：<br>1、机器学习是一种在没有具体编程的情况下教计算机学习的能力。</p>
+<p>2、从大量现象中提取反复出现的规律与模式，机器学习是计算机基于数据构建概率统计模型并运用模型对数据进行预测与分析的学科。</p>
+<p>3、机器学习，顾名思义，让机器去学习。这里，机器指的是计算机，是算法运行的物理载体。对于一个任务及其表现的度量方法，设计一种算法，让算法能够提取中数据所蕴含的规律，这就叫机器学习</p>
+<p>##基本步骤<br><strong>收集数据</strong>：无论是来自excel, access, text files等文件的原始数据，这一步（收集过去的数据）是未来学习的基础。相关数据的种类、密度和数量越大，机器的学习前景就越好。</p>
+<p><strong>准备数据</strong>：任何分析过程都依赖于所使用数据的质量。我们需要花时间来确定数据的质量，然后采取措施来解决缺失数据和异常值的处理等问题。探索性分析可能是研究数据细微差别的一种方法，从而迅速提高数据的营养含量。</p>
+<p><strong>训练模型</strong>：这一步包括选择合适的算法并以模型的形式表示数据。清洗后的数据分为训练和测试两部分（比例视前提而定）。第一部分（训练数据）用于开发模型。第二部分（测试数据），用作参考。</p>
+<p><strong>评估模型</strong>：为了测试准确性，使用了数据的第二部分(holdout / test data)。这一步根据结果确定算法选择的准确度。检验模型准确性的更好的测试方法是查看其在模型构建过程中根本没有用到的数据上的性能。</p>
+<p><strong>提高性能</strong>：这一步可能包括选择一个完全不同的模型，或者引入更多的变量来提高效率。这就是为什么需要花费大量的时间来收集和准备数据。</p>
+<p>##机器学习种类<br><strong>监督学习</strong>：是利用已知类别的样本（即有标记的样本 labeled sample，已知其相应的类别），调整分类器的参数，训练得到一个最优模型，使其达到所要求性能，再利用这个训练后的模型，将所有的输入映射为相应的输出，对输出进行简单的判断，从而实现分类的目的，这样，即可以对未知数据进行分类。</p>
+<p>例如，将邮件进行是否垃圾邮件的分类，一开始我们先将一些邮件及其标签（垃圾邮件或非垃圾邮件）一起进行训练，学习模型不断捕捉这些邮件与标签间的联系进行自我调整和完善，然后我们给一些不带标签的新邮件，让该模型对新邮件进行是否是垃圾邮件的分类。（<strong>给出定义好的标签，程序「学习」标签和数据之间的映射关系</strong>）</p>
+<p><strong>非监督学习</strong>：常常被用于数据挖掘，用于在大量无标签数据中发现些什么她的训练数据是无标签的，训练目标是能对观察值进行分类或者区分等。例如非监督学习应该能在不给任何额外提示的情况下，仅依据所有“花”的图片的特征，将“花”的图片从大量的各种各样的图片中将区分出来。（<strong>数据集没有标签</strong>）</p>
+<p><strong>强化学习</strong>通常被用在机器人技术上（例如机械狗），它接收机器人当前状态，算法的目标是训练机器来做出各种特定行为。工作流程多是：机器被放置在一个特定环境中，在这个环境里机器可以持续性地进行自我训练，而环境会给出或正或负的反馈。机器会从以往的行动经验中得到提升并最终找到最好的知识内容来帮助它做出最有效的行为决策。（<strong>达到目标会有正确反馈</strong>）</p>
+<p>##主要应用</p>
+<p>** 手写识别（handwriting recognition）**：它可以识别手写文字，这样就可以将手写文字直接转变为数字文字。</p>
+<p><strong>语言转换（language translation）</strong>：对口语或书面文字进行翻译。</p>
+<p><strong>语音识别（speech recognition）</strong>：识别语音并将语音片段转换成文本。</p>
+<p><strong>图片分类（image classification）</strong>：将图片进行合适的分类。</p>
+<p><strong>自主驾驶（autonomous driving）</strong>：使车能自己行驶。</p>
+<p>##训练数据和测试数据<br><strong>训练数据</strong>：训练数据是用来学习模型的。训练数据的质量对生成一个成功的机器学习模型来说至关重要，理想的训练数据应该是多样化并尽可能与模型需要用到的特性相关的。</p>
+<p><strong>测试数据</strong>：被用来对生成的模型的准确度进行评估的数据。测试数据不能用来训练模型。</p>
+<p>##过拟合和欠拟合<br><strong>过拟合（overfitting）</strong>：模型在训练数据上运行的很好但在测试数据上表现糟糕。也就是泛化性能不好，如果太追求在训练集上的完美而采用一个很复杂的模型，会使得模型把训练集里面的噪声都当成了真实的数据分布特征，从而得到错误的数据分布估计。过拟合可以通过正则化或交叉验证技术来避免。</p>
+<p><strong>欠拟合（underfitting）</strong>：训练样本太少，导致模型就不足以刻画数据分布了，体现为连在训练集上的错误率都很高的现象。</p>
+<p>##机器学习算法<br><strong>监督学习（构建预测模型）</strong></p>
+<p><strong>分类(classification)**：这种算法使用训练数据（训练数据中包含特征以及分类标签）来构建预测模型。这些预测模型可以使用它从训练数据中所挖掘出来的特征来对新的、未曾见过的数据集进行分类标签预测，而这种最终的分类结果是相互分离的。常用分类算法：逻辑回归、决策树、KNN、随机森林、支持向量机、朴素贝叶斯等（</strong>目标标记为类别型数据(category)**）</p>
+<p><strong>回归（regression）</strong>：这种算法使用从输入数据中获得的特征参数来预测一些额外的特征，为了完成这一工作，算法会建立一个基于数据特征的模型，这个模型可以针对训练数据给出一些未知的特征，也可以用来预测新数据集的特征属性。这里输出的特征属性是连续的且互不分离的。常见的回归算法：线性回归、KNN、Gradient Boosting &amp; AdaBoost等（**目标标记为连续性数值 (continuous numeric value)**）</p>
+<p><strong>无监督学习（构建描述模型）</strong></p>
+<p>**聚类(clustering)**：这类算法的主要目标是对输入数据进行归类，并将其划分为若干个不同的层级或是类别。算法中这一过程仅仅使用了输入数据中挖掘出来的特征而没有使用任何其他信息。与分类不同的是，聚类中输出数据的各个类别标签我们是无法获知的。常见的聚类算法包括k-means、k-medoids和层次聚类。</p>
+<p>**关联（模式挖掘）(association)**：这类算法主要用来从数据集中挖掘和抽取规则和模式。这里的规则阐述了数据中不同参数和属性之间的联系，同时也描画了数据中会经常出现的元素集和模式规律。这些规则和规律可以反过来帮助我们从企业机构的海量数据仓库中发现有意义的内容。常见的这类算法包括Apriori和FP Growth。</p>
+<p>##机器学习与深度学习<br><strong>机器学习</strong>擅长替代重复的人工劳动，用机器自动从大量数据中识别模式</p>
+<blockquote>
+<ul>
+<li>Classification 分类，如垃圾邮件识别(detection, ranking)</li>
+<li>Regression 回归，例如股市预测</li>
+<li>Clustering 聚类，如 iPhoto 按人分组</li>
+<li>Rule Extraction 规则提取，如数据挖掘</li>
+</ul>
+</blockquote>
+<p>比如垃圾邮件识别的问题，做法是先从每一封邮件中抽取出对识别结果可能有影响的因素（称为特征 feature），比如发件地址、邮件标题、收件人数量等等。然后使用算法去训练数据中每个特征和预测结果的相关度，最终得到可以预测结果的特征。算法再强大，如果无法从数据中「学习到」更好的特征表达，也是徒劳。</p>
+<p>但是对机器学习来说，特征提取并不简单。特征工程往往需要人工投入大量时间去研究和调整，就好像原本应该机器解决的问题，却需要人一直在旁边搀扶。</p>
+<p><strong>深度学习</strong>便是解决特征提取问题的一个机器学习分支。它可以<strong>自动学习特征和任务之间的关联</strong>，还能<strong>从简单特征中提取复杂的特征</strong>。</p>
+<p><strong>数据量</strong>：<br>机器学习能够适应各种数据量，特别是数据量较小的场景。在另一方面，如果数据量迅速增加，那么深度学习的效果将更为突出。下图展示了不同数据量下机器学习与深度学习的效能水平。</p>
+<p><strong>硬件依赖性</strong>：<br>与传统机器学习算法相反，深度学习算法在设计上高度依赖于高端设备。深度学习算法需要执行大量矩阵乘法运算，因此需要充足的硬件资源作为支持。</p>
+<p><strong>特征工程</strong>：<br>特征工程是将特定领域知识放入指定特征的过程，旨在减少数据复杂性水平并生成可用于学习算法的模式。<br>示例：传统的机器学习模式专注于特征工程中所需要找像素及其他属性。深度学习算法则专注于数据的其他高级特征，因此能够降低处理每个新问题时特征提取器的实际工作量。</p>
+<p><strong>问题解决方法</strong>:<br>传统机器学习算法遵循标准程序以解决问题。它将问题拆分成数个部分，对其进行分别解决，而后再将结果结合起来以获得所需的答案。深度学习则以集中方式解决问题，而无需进行问题拆分。</p>
+<p><strong>执行时间</strong>:<br>执行时间是指训练算法所需要的时间量。深度学习需要大量时间进行训练，因为其中包含更多参数，因此训练的时间投入也更为可观。相对而言，机器学习算法的执行时间则相对较短。</p>
+<p><strong>可解释性</strong>:<br>可解释性是机器学习与深度学习算法间的主要区别之一——深度学习算法往往不具备可解释性。也正因为如此，业界在使用深度学习之前总会再三考量</p>
+<p>未完待续。。。</p>
 
       
     </div>
@@ -262,7 +266,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2020/09/26/hello-world/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2020/11/01/%E8%AF%86%E5%88%AB%E7%8C%AB%E5%92%AA/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/gtt.jpg">
@@ -276,7 +280,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2020/09/26/hello-world/" class="post-title-link" itemprop="url">Hello World</a>
+            <a href="/2020/11/01/%E8%AF%86%E5%88%AB%E7%8C%AB%E5%92%AA/" class="post-title-link" itemprop="url">未命名</a>
         </h2>
 
         <div class="post-meta">
@@ -285,24 +289,9 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
+              
 
-              <time title="创建时间：2020-09-26 12:12:57" itemprop="dateCreated datePublished" datetime="2020-09-26T12:12:57+08:00">2020-09-26</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-10-20 10:04:22" itemprop="dateModified" datetime="2020-10-20T10:04:22+08:00">2020-10-20</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E6%B5%8B%E8%AF%95/" itemprop="url" rel="index"><span itemprop="name">测试</span></a>
-                </span>
+              <time title="创建时间：2020-11-01 22:00:34 / 修改时间：22:00:39" itemprop="dateCreated datePublished" datetime="2020-11-01T22:00:34+08:00">2020-11-01</time>
             </span>
 
           
@@ -316,20 +305,13 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+          <p>#识别猫咪<br>##导入数据集</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"><span class="keyword">import</span> h5py</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">load_dataset</span>():</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">#train_set_x_orig是一个（209,64,64,3）维度的数组（相当于4D），</span></span><br><span class="line">    <span class="comment">#train_set_y_orig是一个（209，）的数组，即一维数组</span></span><br><span class="line">    <span class="comment">#np.reshape（x，y）：把一个（n,m）的数组变成（x，y）的数组</span></span><br><span class="line">    <span class="comment">#np.shape[n]：计算维度n有多少个组数。a.shape=（3,26,51,23），a.shape[0]=3，a.shape[2]=51</span></span><br><span class="line">    train_dataset = h5py.File(<span class="string">&#x27;train_catvnoncat.h5&#x27;</span>,<span class="string">&quot;r&quot;</span>)</span><br><span class="line">    train_set_x_orig = np.array(train_dataset[<span class="string">&quot;train_set_x&quot;</span>][:])</span><br><span class="line">    train_set_y_orig = np.array(train_dataset[<span class="string">&quot;train_set_y&quot;</span>][:])</span><br><span class="line"></span><br><span class="line">    test_dataset = h5py.File(<span class="string">&#x27;test_catvnoncat.h5&#x27;</span>,<span class="string">&quot;r&quot;</span>)</span><br><span class="line">    test_set_x_orig = np.array(test_dataset[<span class="string">&quot;test_set_x&quot;</span>][:])</span><br><span class="line">    test_set_y_orig = np.array(test_dataset[<span class="string">&quot;test_set_y&quot;</span>][:])</span><br><span class="line"></span><br><span class="line">    classes = np.array(test_dataset[<span class="string">&quot;list_classes&quot;</span>][:])</span><br><span class="line"></span><br><span class="line">    train_set_y_orig = train_set_y_orig.reshape((<span class="number">1</span>, train_set_y_orig.shape[<span class="number">0</span>]))</span><br><span class="line">    test_set_y_orig = test_set_y_orig.reshape((<span class="number">1</span>,test_set_y_orig.shape[<span class="number">0</span>]))</span><br><span class="line">    <span class="comment">#print(&quot;test: %i&quot;,train_set_y_orig.shape[0])</span></span><br><span class="line">    <span class="comment">#训练集X矩阵（train_set_x_orig）, 训练集Y矩阵（train_set_y_orig ），测试集X矩阵(test_set_x_orig),测试集Y矩阵（test_set_y_orig）,类别( classes:喵与非喵）</span></span><br><span class="line">    <span class="keyword">return</span> train_set_x_orig, train_set_y_orig, test_set_x_orig, test_set_y_orig, classes</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>##测试数据是否导入成功</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"><span class="keyword">import</span> h5py</span><br><span class="line"><span class="keyword">import</span> matplotlib </span><br><span class="line"><span class="keyword">import</span> matplotlib.pyplot <span class="keyword">as</span> plt</span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">load_test</span>():</span></span><br><span class="line">    train_dataset = h5py.File(<span class="string">&#x27;train_catvnoncat.h5&#x27;</span>,<span class="string">&quot;r&quot;</span>)</span><br><span class="line">    train_set_x_orig = np.array(train_dataset[<span class="string">&quot;train_set_x&quot;</span>][:])</span><br><span class="line">    train_set_y_orig = np.array(train_dataset[<span class="string">&quot;train_set_y&quot;</span>][:])</span><br><span class="line"></span><br><span class="line">    test_dataset = h5py.File(<span class="string">&#x27;test_catvnoncat.h5&#x27;</span>,<span class="string">&quot;r&quot;</span>)</span><br><span class="line">    test_set_x_orig = np.array(test_dataset[<span class="string">&quot;test_set_x&quot;</span>][:])</span><br><span class="line">    test_set_y_orig = np.array(test_dataset[<span class="string">&quot;test_set_y&quot;</span>][:])</span><br><span class="line"></span><br><span class="line">    classes = np.array(test_dataset[<span class="string">&quot;list_classes&quot;</span>][:])</span><br><span class="line"></span><br><span class="line">    train_set_y_orig = train_set_y_orig.reshape((<span class="number">1</span>, train_set_y_orig.shape[<span class="number">0</span>]))</span><br><span class="line">    test_set_y_orig = test_set_y_orig.reshape((<span class="number">1</span>,test_set_y_orig.shape[<span class="number">0</span>]))</span><br><span class="line"></span><br><span class="line">    <span class="comment">#print(&quot;test:&quot;,train_set_y_orig.shape[1])</span></span><br><span class="line">    <span class="comment">#print(&quot;test:&quot;,train_set_x_orig.shape[0])</span></span><br><span class="line">    <span class="comment">#print(&quot;test:&quot;,test_set_y_orig.shape[0])</span></span><br><span class="line">    <span class="comment">#print(&quot;test:&quot;,test_set_x_orig.shape[0])</span></span><br><span class="line">    index=<span class="number">25</span></span><br><span class="line">    plt.imshow(train_set_x_orig[index]) <span class="comment"># 查看训练集中的图片</span></span><br><span class="line">    plt.show()</span><br><span class="line">load_test()</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
+<p>##核心代码（加了注释）</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br><span class="line">168</span><br><span class="line">169</span><br><span class="line">170</span><br><span class="line">171</span><br><span class="line">172</span><br><span class="line">173</span><br><span class="line">174</span><br><span class="line">175</span><br><span class="line">176</span><br><span class="line">177</span><br><span class="line">178</span><br><span class="line">179</span><br><span class="line">180</span><br><span class="line">181</span><br><span class="line">182</span><br><span class="line">183</span><br><span class="line">184</span><br><span class="line">185</span><br><span class="line">186</span><br><span class="line">187</span><br><span class="line">188</span><br><span class="line">189</span><br><span class="line">190</span><br><span class="line">191</span><br><span class="line">192</span><br><span class="line">193</span><br><span class="line">194</span><br><span class="line">195</span><br><span class="line">196</span><br><span class="line">197</span><br><span class="line">198</span><br><span class="line">199</span><br><span class="line">200</span><br><span class="line">201</span><br><span class="line">202</span><br><span class="line">203</span><br><span class="line">204</span><br><span class="line">205</span><br><span class="line">206</span><br><span class="line">207</span><br><span class="line">208</span><br><span class="line">209</span><br><span class="line">210</span><br><span class="line">211</span><br><span class="line">212</span><br><span class="line">213</span><br><span class="line">214</span><br><span class="line">215</span><br><span class="line">216</span><br><span class="line">217</span><br><span class="line">218</span><br><span class="line">219</span><br><span class="line">220</span><br><span class="line">221</span><br><span class="line">222</span><br><span class="line">223</span><br><span class="line">224</span><br><span class="line">225</span><br><span class="line">226</span><br><span class="line">227</span><br><span class="line">228</span><br><span class="line">229</span><br><span class="line">230</span><br><span class="line">231</span><br><span class="line">232</span><br><span class="line">233</span><br><span class="line">234</span><br><span class="line">235</span><br><span class="line">236</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"><span class="keyword">from</span> utils <span class="keyword">import</span> load_dataset</span><br><span class="line"><span class="keyword">import</span> scipy</span><br><span class="line"><span class="keyword">import</span> matplotlib.pyplot <span class="keyword">as</span> plt</span><br><span class="line"></span><br><span class="line"><span class="comment">#导入数据集</span></span><br><span class="line">train_set_x_orig, train_set_y, test_set_x_orig, test_set_y, classes = load_dataset()</span><br><span class="line"></span><br><span class="line"><span class="comment">#获取基本参数</span></span><br><span class="line"><span class="comment">#训练集大小为209</span></span><br><span class="line">m_train = train_set_x_orig.shape[<span class="number">0</span>]</span><br><span class="line"><span class="comment">#训练集大小为50</span></span><br><span class="line">m_test = test_set_x_orig.shape[<span class="number">0</span>]</span><br><span class="line"><span class="comment">#图片宽度64</span></span><br><span class="line">num_px = train_set_x_orig.shape[<span class="number">1</span>]</span><br><span class="line"></span><br><span class="line"><span class="comment">#原始图片为三维，将图片降维并转置</span></span><br><span class="line">train_set_x_flatten = train_set_x_orig.reshape(m_train,<span class="number">-1</span>).T</span><br><span class="line">test_set_x_flatten = test_set_x_orig.reshape(m_test,<span class="number">-1</span>).T</span><br><span class="line"></span><br><span class="line"><span class="comment">#对数据进行归一化：</span></span><br><span class="line">train_set_x = train_set_x_flatten/<span class="number">255</span></span><br><span class="line">test_set_x = test_set_x_flatten/<span class="number">255</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#激活函数/sigmod函数</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">sigmod</span>(<span class="params">z</span>):</span></span><br><span class="line">    a = <span class="number">1</span>/(<span class="number">1</span>+np.exp(-z))</span><br><span class="line">    <span class="keyword">return</span> a</span><br><span class="line"></span><br><span class="line"><span class="comment">#参数初始化（w是列向量，传入维度dim，返回shape为（dim</span></span><br><span class="line"><span class="comment"># ，1）的w，b就是一个数）</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">initialize_with_zeros</span>(<span class="params">dim</span>):</span></span><br><span class="line">    w = np.zeros((dim,<span class="number">1</span>))</span><br><span class="line">    b = <span class="number">0</span></span><br><span class="line">    <span class="comment">#利用断言确定语句正确</span></span><br><span class="line">    <span class="keyword">assert</span> (w.shape == (dim, <span class="number">1</span>))</span><br><span class="line">    <span class="keyword">assert</span> (isinstance(b, int) <span class="keyword">or</span> isinstance(b, float))</span><br><span class="line">    <span class="keyword">return</span> w,b</span><br><span class="line"></span><br><span class="line"><span class="comment">#反向传播和前向传播</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">propagate</span>(<span class="params">w, b, X, Y</span>):</span></span><br><span class="line">    <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">    传参</span></span><br><span class="line"><span class="string">    w -- 权重，shape：(num_px * num_px *3,1)</span></span><br><span class="line"><span class="string">    b -- 偏置项，一个标量</span></span><br><span class="line"><span class="string">    X -- 数据集，shape：(num_px * num_px * 3,m),m为样本数</span></span><br><span class="line"><span class="string">    Y -- 真实标签：shape：(1,m)</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">    返回值：</span></span><br><span class="line"><span class="string">    cost，dw，db，后两者放在一个字典grads里</span></span><br><span class="line"><span class="string">    &quot;&quot;&quot;</span></span><br><span class="line">    <span class="comment">#获取样本数m：</span></span><br><span class="line">    m = X.shape[<span class="number">1</span>]</span><br><span class="line"></span><br><span class="line">    <span class="comment">#前向传播</span></span><br><span class="line">    A = sigmod(np.dot(w.T,X)+b)</span><br><span class="line">    cost = -(np.sum(Y*np.log(A)+(<span class="number">1</span>-Y)*np.log(<span class="number">1</span>-A)))/m</span><br><span class="line"></span><br><span class="line">    <span class="comment">#反向传播</span></span><br><span class="line">    dZ = A-Y</span><br><span class="line">    dw = (np.dot(X,dZ.T))/m</span><br><span class="line">    db = (np.sum(dZ))/m</span><br><span class="line">  </span><br><span class="line">    <span class="comment"># 使用断言确保数据的准确性</span></span><br><span class="line">    <span class="keyword">assert</span> (dw.shape == w.shape)</span><br><span class="line">    <span class="keyword">assert</span> (db.dtype == float)</span><br><span class="line"></span><br><span class="line">    <span class="comment">#删除np.shape[x] = 1 的那一个维度</span></span><br><span class="line">    <span class="keyword">assert</span>(dw.shape == w.shape)</span><br><span class="line">    <span class="keyword">assert</span> (db.dtype == float)</span><br><span class="line">    cost = np.squeeze(cost)</span><br><span class="line">    <span class="keyword">assert</span>(cost.shape == ())</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="comment">#创造一个字典存储返回值：</span></span><br><span class="line">    grads = &#123;<span class="string">&quot;dw&quot;</span>: dw,</span><br><span class="line">             <span class="string">&quot;db&quot;</span>: db&#125;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">return</span> grads, cost</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">optimize</span>(<span class="params">w, b, X, Y, num_iterations, learning_rate, print_cost = False</span>):</span></span><br><span class="line">    <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">     此函数通过运行梯度下降算法来优化w和b</span></span><br><span class="line"><span class="string">    参数：</span></span><br><span class="line"><span class="string">        w  - 权重，大小不等的数组（num_px * num_px * 3，1）</span></span><br><span class="line"><span class="string">        b  - 偏差，一个标量</span></span><br><span class="line"><span class="string">        X  - 维度为（num_px * num_px * 3，训练数据的数量）的数组。</span></span><br><span class="line"><span class="string">        Y  - 真正的“标签”矢量（如果非猫则为0，如果是猫则为1），矩阵维度为(1,训练数据的数量)</span></span><br><span class="line"><span class="string">        num_iterations  - 优化循环的迭代次数</span></span><br><span class="line"><span class="string">        learning_rate  - 梯度下降更新规则的学习率</span></span><br><span class="line"><span class="string">        print_cost  - 每100步打印一次损失值</span></span><br><span class="line"><span class="string">    返回：</span></span><br><span class="line"><span class="string">        params  - 包含权重w和偏差b的字典</span></span><br><span class="line"><span class="string">        grads  - 包含权重和偏差相对于成本函数的梯度的字典</span></span><br><span class="line"><span class="string">        成本 - 优化期间计算的所有成本列表，将用于绘制学习曲线。</span></span><br><span class="line"><span class="string">    &quot;&quot;&quot;</span></span><br><span class="line">    </span><br><span class="line">    <span class="comment">#定义一个costs数组，存放每若干次迭代后的cost，从而可以画图看看cost的变化趋势</span></span><br><span class="line">    costs = []</span><br><span class="line"></span><br><span class="line">    <span class="comment">#进行迭代</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(num_iterations):</span><br><span class="line">        <span class="comment">#用propagate计算出每次迭代后的cost和梯度：</span></span><br><span class="line">        grads,cost = propagate(w,b,X,Y)</span><br><span class="line">        dw = grads[<span class="string">&#x27;dw&#x27;</span>]</span><br><span class="line">        db = grads[<span class="string">&#x27;db&#x27;</span>]</span><br><span class="line"></span><br><span class="line">        <span class="comment">#用上面得到的梯度来更新参数</span></span><br><span class="line">        w = w - learning_rate*dw</span><br><span class="line">        b = b - learning_rate*db</span><br><span class="line"></span><br><span class="line">        <span class="comment">#每100次迭代，保存一个cost看看：</span></span><br><span class="line">        <span class="keyword">if</span> i % <span class="number">100</span> == <span class="number">0</span>:</span><br><span class="line">            costs.append(cost)</span><br><span class="line"></span><br><span class="line">        <span class="comment">#每100次将cost打印出来</span></span><br><span class="line">        <span class="keyword">if</span> print_cost <span class="keyword">and</span> i % <span class="number">100</span> == <span class="number">0</span>:</span><br><span class="line">            print(<span class="string">&quot;Cost after iterations %i: %f&quot;</span> %(i,cost))</span><br><span class="line"></span><br><span class="line">    <span class="comment">#迭代结束，将最终的各个参数放入字典，并返回：</span></span><br><span class="line">    params = &#123;<span class="string">&quot;w&quot;</span>: w,</span><br><span class="line">              <span class="string">&quot;b&quot;</span>: b&#125;</span><br><span class="line">    grads = &#123;<span class="string">&quot;dw&quot;</span>: dw,</span><br><span class="line">             <span class="string">&quot;db&quot;</span>: db&#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> params, grads, costs</span><br><span class="line"></span><br><span class="line"><span class="comment">#预测函数</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">predict</span>(<span class="params">w,b,X</span>):</span></span><br><span class="line">    <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">    使用学习逻辑回归参数logistic （w，b）预测标签是0还是1，</span></span><br><span class="line"><span class="string">    参数：</span></span><br><span class="line"><span class="string">        w  - 权重，大小不等的数组（num_px * num_px * 3，1）</span></span><br><span class="line"><span class="string">        b  - 偏差，一个标量</span></span><br><span class="line"><span class="string">        X  - 维度为（num_px * num_px * 3，训练数据的数量）的数据</span></span><br><span class="line"><span class="string">    返回：</span></span><br><span class="line"><span class="string">        Y_prediction  - 包含X中所有图片的所有预测【0 | 1】的一个numpy数组（向量）</span></span><br><span class="line"><span class="string">    &quot;&quot;&quot;</span></span><br><span class="line">    m = X.shape[<span class="number">1</span>]</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 用于存储预测值</span></span><br><span class="line">    Y_prediction = np.zeros((<span class="number">1</span>,m))</span><br><span class="line">    w = w.reshape(X.shape[<span class="number">0</span>], <span class="number">1</span>)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 预测猫在图片中实际出现的概率</span></span><br><span class="line">    A = sigmod(np.dot(w.T,X)+b)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 将概率转化为实际值</span></span><br><span class="line">    <span class="keyword">for</span>  i <span class="keyword">in</span> range(m):</span><br><span class="line">        <span class="keyword">if</span> A[:,i]&gt;<span class="number">0.5</span>:</span><br><span class="line">            Y_prediction[:,i] = <span class="number">1</span></span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            Y_prediction[:,i] = <span class="number">0</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">assert</span> (Y_prediction.shape == (<span class="number">1</span>, m))</span><br><span class="line">    <span class="keyword">return</span> Y_prediction</span><br><span class="line">    </span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">logistic_model</span>(<span class="params">X_train,Y_train,X_test,Y_test,learning_rate=<span class="number">0.1</span>,num_iterations=<span class="number">2000</span>,print_cost=False</span>):</span></span><br><span class="line">    <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">    通过调用之前实现的函数来构建逻辑回归模型</span></span><br><span class="line"><span class="string">    参数：</span></span><br><span class="line"><span class="string">        X_train  - numpy的数组,维度为（num_px * num_px * 3，m_train）的训练集</span></span><br><span class="line"><span class="string">        Y_train  - numpy的数组,维度为（1，m_train）（矢量）的训练标签集</span></span><br><span class="line"><span class="string">        X_test   - numpy的数组,维度为（num_px * num_px * 3，m_test）的测试集</span></span><br><span class="line"><span class="string">        Y_test   - numpy的数组,维度为（1，m_test）的（向量）的测试标签集</span></span><br><span class="line"><span class="string">        num_iterations  - 表示用于优化参数的迭代次数的超参数</span></span><br><span class="line"><span class="string">        learning_rate  - 表示optimize（）更新规则中使用的学习速率的超参数</span></span><br><span class="line"><span class="string">        print_cost  - 设置为true以每100次迭代打印成本</span></span><br><span class="line"><span class="string">    返回：</span></span><br><span class="line"><span class="string">        d  - 包含有关模型信息的字典。</span></span><br><span class="line"><span class="string">    &quot;&quot;&quot;</span></span><br><span class="line">    </span><br><span class="line">    <span class="comment">#获特征维度，初始化参数：</span></span><br><span class="line">    dim = X_train.shape[<span class="number">0</span>]</span><br><span class="line">    w,b = initialize_with_zeros(dim)</span><br><span class="line"></span><br><span class="line">    <span class="comment">#梯度下降，迭代求出模型参数：</span></span><br><span class="line">    params,grads,costs = optimize(w,b,X_train,Y_train,num_iterations,learning_rate,print_cost)</span><br><span class="line">    w = params[<span class="string">&#x27;w&#x27;</span>]</span><br><span class="line">    b = params[<span class="string">&#x27;b&#x27;</span>]</span><br><span class="line"></span><br><span class="line">    <span class="comment">#用学得的参数进行预测：</span></span><br><span class="line">    prediction_train = predict(w,b,X_test)</span><br><span class="line">    prediction_test = predict(w,b,X_train)</span><br><span class="line"></span><br><span class="line">    <span class="comment">#计算准确率，分别在训练集和测试集上：</span></span><br><span class="line">    <span class="comment">#accuracy_train = 1 - np.mean(np.abs(prediction_train - Y_train))</span></span><br><span class="line">    <span class="comment">#accuracy_test = 1 - np.mean(np.abs(prediction_test - Y_test))</span></span><br><span class="line">    <span class="comment">#print(&quot;Accuracy on train set:&quot;,accuracy_train )</span></span><br><span class="line">    <span class="comment">#print(&quot;Accuracy on test set:&quot;,accuracy_test )</span></span><br><span class="line">    print(<span class="string">&quot;train accuracy: &#123;&#125; %&quot;</span>.format(<span class="number">100</span> - np.mean(np.abs(prediction_train - Y_train)) * <span class="number">100</span>))</span><br><span class="line">    print(<span class="string">&quot;test accuracy: &#123;&#125; %&quot;</span>.format(<span class="number">100</span> - np.mean(np.abs(prediction_test - Y_test)) * <span class="number">100</span>))</span><br><span class="line">    <span class="comment"># print(&quot;测试集的准确性：&quot;, format(100 - np.mean(np.abs(prediction_test - Y_test))), &quot;%&quot;)</span></span><br><span class="line">    <span class="comment"># print(&quot;训练集的准确性：&quot;, format(100 - np.mean(np.abs(prediction_train - Y_train))), &quot;%&quot;)</span></span><br><span class="line"> </span><br><span class="line"></span><br><span class="line">   <span class="comment">#为了便于分析和检查，我们把得到的所有参数、超参数都存进一个字典返回出来：</span></span><br><span class="line">    d = &#123;<span class="string">&quot;costs&quot;</span>: costs,</span><br><span class="line">         <span class="string">&quot;Y_prediction_test&quot;</span>: prediction_test , </span><br><span class="line">         <span class="string">&quot;Y_prediction_train&quot;</span> : prediction_train , </span><br><span class="line">         <span class="string">&quot;w&quot;</span> : w, </span><br><span class="line">         <span class="string">&quot;b&quot;</span> : b,</span><br><span class="line">         <span class="string">&quot;learning_rate&quot;</span> : learning_rate,</span><br><span class="line">         <span class="string">&quot;num_iterations&quot;</span>: num_iterations</span><br><span class="line">         <span class="comment">#&quot;train_acy&quot;:accuracy_train,</span></span><br><span class="line">         <span class="comment">#&quot;test_acy&quot;:accuracy_test</span></span><br><span class="line">        &#125;</span><br><span class="line">    <span class="keyword">return</span> d</span><br><span class="line"><span class="comment">#测试一下训练结果</span></span><br><span class="line">d = logistic_model(train_set_x, train_set_y, test_set_x, test_set_y, num_iterations = <span class="number">2000</span>, learning_rate = <span class="number">0.005</span>, print_cost = <span class="literal">True</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 可视化</span></span><br><span class="line">costs=d[<span class="string">&#x27;costs&#x27;</span>]</span><br><span class="line">plt.plot(costs)</span><br><span class="line">plt.title(<span class="string">&quot;Learning rate = 0.005&quot;</span>)</span><br><span class="line">plt.xlabel(<span class="string">&quot;iterations (per hundreds)&quot;</span>)</span><br><span class="line">plt.ylabel(<span class="string">&quot;Cost&quot;</span>)</span><br><span class="line">plt.show()</span><br><span class="line"> </span><br><span class="line">learning_rates = [<span class="number">0.01</span>, <span class="number">0.001</span>, <span class="number">0.0001</span>]</span><br><span class="line">models = &#123;&#125;</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> learning_rates:</span><br><span class="line">    <span class="keyword">print</span> (<span class="string">&quot;learning rate is: &quot;</span> + str(i))</span><br><span class="line">    models[str(i)] = logistic_model(train_set_x, train_set_y, test_set_x, test_set_y, num_iterations = <span class="number">1500</span>, learning_rate = i, print_cost = <span class="literal">False</span>)</span><br><span class="line">    <span class="keyword">print</span> (<span class="string">&#x27;\n&#x27;</span> + <span class="string">&quot;-------------------------------------------------------&quot;</span> + <span class="string">&#x27;\n&#x27;</span>)</span><br><span class="line"> </span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> learning_rates:</span><br><span class="line">    plt.plot(np.squeeze(models[str(i)][<span class="string">&quot;costs&quot;</span>]), label= str(models[str(i)][<span class="string">&quot;learning_rate&quot;</span>]))</span><br><span class="line"> </span><br><span class="line">plt.ylabel(<span class="string">&#x27;cost&#x27;</span>)</span><br><span class="line">plt.xlabel(<span class="string">&#x27;iterations&#x27;</span>)</span><br><span class="line"> </span><br><span class="line">legend = plt.legend(loc=<span class="string">&#x27;upper center&#x27;</span>, shadow=<span class="literal">True</span>)</span><br><span class="line">frame = legend.get_frame()</span><br><span class="line">frame.set_facecolor(<span class="string">&#x27;0.90&#x27;</span>)</span><br><span class="line">plt.show()</span><br></pre></td></tr></table></figure>
       
     </div>
 
@@ -348,7 +330,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2020/09/26/hexo%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0%E5%88%86%E7%B1%BB%E3%80%81%E6%A0%87%E7%AD%BE/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2020/09/26/Ubantu%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/gtt.jpg">
@@ -362,7 +344,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2020/09/26/hexo%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0%E5%88%86%E7%B1%BB%E3%80%81%E6%A0%87%E7%AD%BE/" class="post-title-link" itemprop="url">hexo博客添加分类、标签</a>
+            <a href="/2020/09/26/Ubantu%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/" class="post-title-link" itemprop="url">Ubantu常用命令</a>
         </h2>
 
         <div class="post-meta">
@@ -379,7 +361,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-10-23 17:39:18" itemprop="dateModified" datetime="2020-10-23T17:39:18+08:00">2020-10-23</time>
+                <time title="修改时间：2020-10-23 17:35:47" itemprop="dateModified" datetime="2020-10-23T17:35:47+08:00">2020-10-23</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -387,7 +369,7 @@
               </span>
               <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E5%B7%A5%E5%85%B7%E9%83%A8%E7%BD%B2/" itemprop="url" rel="index"><span itemprop="name">工具部署</span></a>
+                  <a href="/categories/Ubantu/" itemprop="url" rel="index"><span itemprop="name">Ubantu</span></a>
                 </span>
             </span>
 
@@ -402,23 +384,10 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h2 id="创建”分类”标签"><a href="#创建”分类”标签" class="headerlink" title="创建”分类”标签"></a>创建”分类”标签</h2><p>进入博客根目录，执行命令</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new page categories</span><br></pre></td></tr></table></figure>
-<p>成功后，会生成index.md,打开后添加<br>type: “categories”</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: categories</span><br><span class="line">date: 2020-10-20 09:58:59</span><br><span class="line">type: &quot;categories&quot;</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-<p>给文章添加分类属性</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: Hello World</span><br><span class="line">date: 2020-09-26 12:12:57</span><br><span class="line">categories: </span><br><span class="line">- 测试</span><br><span class="line"></span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-<h2 id="创建”标签”目录"><a href="#创建”标签”目录" class="headerlink" title="创建”标签”目录"></a>创建”标签”目录</h2><p>进入博客根目录，执行命令</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new page tags</span><br></pre></td></tr></table></figure>
-<p>成功后，会生成index.md,打开后添加<br>type: “tags”</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: tags</span><br><span class="line">date: 2020-10-20 09:58:59</span><br><span class="line">type: &quot;tags&quot;</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-<p>给文章添加标签属性</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: Hello World</span><br><span class="line">date: 2020-09-26 12:12:57</span><br><span class="line">categories: </span><br><span class="line">- 测试</span><br><span class="line">tags:</span><br><span class="line">- HelloWorld</span><br><span class="line"></span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-<h2 id="添加”关于”页面"><a href="#添加”关于”页面" class="headerlink" title="添加”关于”页面"></a>添加”关于”页面</h2><p>执行命令</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new page &quot;about&quot;</span><br></pre></td></tr></table></figure>
-<p>更改主题配置文件</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">menu:</span><br><span class="line">  home: &#x2F; || fa fa-home</span><br><span class="line">  about: &#x2F;about&#x2F; || fa fa-user</span><br><span class="line">  tags: &#x2F;tags&#x2F; || fa fa-tags</span><br><span class="line">  categories: &#x2F;categories&#x2F; || fa fa-th</span><br><span class="line">  archives: &#x2F;archives&#x2F; || fa fa-archive</span><br><span class="line">  #schedule: &#x2F;schedule&#x2F; || fa fa-calendar</span><br><span class="line">  #sitemap: &#x2F;sitemap.xml || fa fa-sitemap</span><br><span class="line">  #commonweal: &#x2F;404&#x2F; || fa fa-heartbeat</span><br><span class="line">  # schedule: &#x2F;schedule&#x2F; || calendar # 日历</span><br><span class="line">  # sitemap: &#x2F;sitemap.xml || sitemap # 站点地图</span><br><span class="line">  # commonweal: &#x2F;404&#x2F; || heartbeat # 腾讯公益404</span><br></pre></td></tr></table></figure>
-<p>然后修改source/about/目录中的index.md文件即可</p>
+          <h2 id="查看端口是否被占用"><a href="#查看端口是否被占用" class="headerlink" title="查看端口是否被占用"></a>查看端口是否被占用</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">netstat -tunlp|grep 8888</span><br></pre></td></tr></table></figure>
+<h2 id="关掉进程"><a href="#关掉进程" class="headerlink" title="关掉进程"></a>关掉进程</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">kill -9 进程号</span><br></pre></td></tr></table></figure>
+<h2 id="修改文件夹权限"><a href="#修改文件夹权限" class="headerlink" title="修改文件夹权限"></a>修改文件夹权限</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo chmod -R 777 &#x2F;xxx</span><br></pre></td></tr></table></figure>
+<p>未完待续…</p>
 
       
     </div>
@@ -585,7 +554,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2020/09/26/Ubantu%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2020/09/26/VSCode%E9%85%8D%E7%BD%AEC-C++%E7%9A%84%E7%BC%96%E8%AF%91%E7%8E%AF%E5%A2%83/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/gtt.jpg">
@@ -599,7 +568,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2020/09/26/Ubantu%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/" class="post-title-link" itemprop="url">Ubantu常用命令</a>
+            <a href="/2020/09/26/VSCode%E9%85%8D%E7%BD%AEC-C++%E7%9A%84%E7%BC%96%E8%AF%91%E7%8E%AF%E5%A2%83/" class="post-title-link" itemprop="url">VSCode配置C/C++的编译环境</a>
         </h2>
 
         <div class="post-meta">
@@ -616,7 +585,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-10-23 17:35:47" itemprop="dateModified" datetime="2020-10-23T17:35:47+08:00">2020-10-23</time>
+                <time title="修改时间：2020-10-23 17:32:01" itemprop="dateModified" datetime="2020-10-23T17:32:01+08:00">2020-10-23</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -624,7 +593,7 @@
               </span>
               <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Ubantu/" itemprop="url" rel="index"><span itemprop="name">Ubantu</span></a>
+                  <a href="/categories/%E5%B7%A5%E5%85%B7%E9%83%A8%E7%BD%B2/" itemprop="url" rel="index"><span itemprop="name">工具部署</span></a>
                 </span>
             </span>
 
@@ -639,10 +608,104 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h2 id="查看端口是否被占用"><a href="#查看端口是否被占用" class="headerlink" title="查看端口是否被占用"></a>查看端口是否被占用</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">netstat -tunlp|grep 8888</span><br></pre></td></tr></table></figure>
-<h2 id="关掉进程"><a href="#关掉进程" class="headerlink" title="关掉进程"></a>关掉进程</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">kill -9 进程号</span><br></pre></td></tr></table></figure>
-<h2 id="修改文件夹权限"><a href="#修改文件夹权限" class="headerlink" title="修改文件夹权限"></a>修改文件夹权限</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo chmod -R 777 &#x2F;xxx</span><br></pre></td></tr></table></figure>
-<p>未完待续…</p>
+          <h2 id="安装vsCode"><a href="#安装vsCode" class="headerlink" title="安装vsCode"></a>安装vsCode</h2><p><a target="_blank" rel="noopener" href="https://code.visualstudio.com/">VSCode</a></p>
+<h2 id="安装C-C-扩展"><a href="#安装C-C-扩展" class="headerlink" title="安装C/C++扩展"></a>安装C/C++扩展</h2><h2 id="安装编译环境mingw-w64"><a href="#安装编译环境mingw-w64" class="headerlink" title="安装编译环境mingw-w64"></a>安装编译环境mingw-w64</h2><p><a target="_blank" rel="noopener" href="http://www.mingw-w64.org/doku.php/download">mingw-w64</a><br>安装完毕之后，配置环境变量，此电脑-属性-高级系统设置-环境变量-系统变量-path-添加一条D:\mingw\mingw32\bin\（你安装的编译环境的地址）</p>
+<h2 id="配置VScode"><a href="#配置VScode" class="headerlink" title="配置VScode"></a>配置VScode</h2><p>launch.json</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    &quot;version&quot;: &quot;0.2.0&quot;,</span><br><span class="line">    &quot;configurations&quot;: [</span><br><span class="line"></span><br><span class="line">        &#123;</span><br><span class="line">            &quot;name&quot;: &quot;(gdb) Launch&quot;,    &#x2F;&#x2F; 配置名称，将会在启动配置的下拉菜单中显示</span><br><span class="line">            &quot;type&quot;: &quot;cppdbg&quot;,         &#x2F;&#x2F; 配置类型，这里只能为cppdbg</span><br><span class="line">            &quot;request&quot;: &quot;launch&quot;,    &#x2F;&#x2F; 请求配置类型，可以为launch（启动）或attach（附加）</span><br><span class="line">            &quot;program&quot;: &quot;$&#123;workspaceRoot&#125;&#x2F;$&#123;fileBasenameNoExtension&#125;.exe&quot;,&#x2F;&#x2F; 将要进行调试的程序的路径</span><br><span class="line">            &quot;args&quot;: [],                &#x2F;&#x2F; 程序调试时传递给程序的命令行参数，一般设为空即可</span><br><span class="line">            &quot;stopAtEntry&quot;: false,     &#x2F;&#x2F; 设为true时程序将暂停在程序入口处，一般设置为false</span><br><span class="line">            &quot;cwd&quot;: &quot;$&#123;workspaceRoot&#125;&quot;,&#x2F;&#x2F; 调试程序时的工作目录，一般为$&#123;workspaceRoot&#125;即代码所在目录</span><br><span class="line">            &quot;environment&quot;: [],</span><br><span class="line">            &quot;externalConsole&quot;: true,&#x2F;&#x2F; 调试时是否显示控制台窗口，一般设置为true显示控制台</span><br><span class="line">            &quot;MIMode&quot;: &quot;gdb&quot;,</span><br><span class="line">            &quot;miDebuggerPath&quot;: &quot;D:\\MinGW\\bin\\gdb.exe&quot;,&#x2F;&#x2F; miDebugger的路径，注意这里要与MinGw的路径对应</span><br><span class="line">            &quot;preLaunchTask&quot;: &quot;g++&quot;,    &#x2F;&#x2F; 调试会话开始前执行的任务，一般为编译程序，c++为g++, c为gcc</span><br><span class="line">            &quot;setupCommands&quot;: [</span><br><span class="line">                &#123;</span><br><span class="line">                    &quot;description&quot;: &quot;Enable pretty-printing for gdb&quot;,</span><br><span class="line">                    &quot;text&quot;: &quot;-enable-pretty-printing&quot;,</span><br><span class="line">                    &quot;ignoreFailures&quot;: true</span><br><span class="line">                &#125;</span><br><span class="line">            ]</span><br><span class="line">        &#125;</span><br><span class="line">    ]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>task.json</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">        &quot;version&quot;: &quot;2.0.0&quot;,</span><br><span class="line">        &quot;command&quot;: &quot;g++&quot;,</span><br><span class="line">        &quot;args&quot;: [</span><br><span class="line">            &quot;-g&quot;,</span><br><span class="line">            &quot;$&#123;file&#125;&quot;,</span><br><span class="line">            &quot;-o&quot;,</span><br><span class="line">            &quot;$&#123;fileDirname&#125;&#x2F;$&#123;fileBasenameNoExtension&#125;.exe&quot;</span><br><span class="line">        ],</span><br><span class="line">        &quot;problemMatcher&quot;: &#123;</span><br><span class="line">            &quot;owner&quot;: &quot;cpp&quot;,</span><br><span class="line">            &quot;fileLocation&quot;: [</span><br><span class="line">                &quot;relative&quot;,</span><br><span class="line">                &quot;$&#123;workspaceRoot&#125;&quot;</span><br><span class="line">            ],</span><br><span class="line">            &quot;pattern&quot;: &#123;</span><br><span class="line">                &quot;regexp&quot;: &quot;^(.*):(\\d+):(\\d+):\\s+(warning|error):\\s+(.*)$&quot;,</span><br><span class="line">                &quot;file&quot;: 1,</span><br><span class="line">                &quot;line&quot;: 2,</span><br><span class="line">                &quot;column&quot;: 3,</span><br><span class="line">                &quot;severity&quot;: 4,</span><br><span class="line">                &quot;message&quot;: 5</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;,</span><br><span class="line">        &quot;group&quot;: &#123;</span><br><span class="line">            &quot;kind&quot;: &quot;build&quot;,</span><br><span class="line">            &quot;isDefault&quot;: true</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2020/09/26/hello-world/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/gtt.jpg">
+      <meta itemprop="name" content="gtt1025">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="程序人生">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/09/26/hello-world/" class="post-title-link" itemprop="url">Hello World</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-09-26 12:12:57" itemprop="dateCreated datePublished" datetime="2020-09-26T12:12:57+08:00">2020-09-26</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-10-20 10:04:22" itemprop="dateModified" datetime="2020-10-20T10:04:22+08:00">2020-10-20</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E6%B5%8B%E8%AF%95/" itemprop="url" rel="index"><span itemprop="name">测试</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 
       
     </div>
@@ -771,7 +834,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2020/09/26/VSCode%E9%85%8D%E7%BD%AEC-C++%E7%9A%84%E7%BC%96%E8%AF%91%E7%8E%AF%E5%A2%83/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2020/09/26/hexo+Github%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/gtt.jpg">
@@ -785,7 +848,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2020/09/26/VSCode%E9%85%8D%E7%BD%AEC-C++%E7%9A%84%E7%BC%96%E8%AF%91%E7%8E%AF%E5%A2%83/" class="post-title-link" itemprop="url">VSCode配置C/C++的编译环境</a>
+            <a href="/2020/09/26/hexo+Github%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" class="post-title-link" itemprop="url">hexo+Github搭建个人博客</a>
         </h2>
 
         <div class="post-meta">
@@ -802,7 +865,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-10-23 17:32:01" itemprop="dateModified" datetime="2020-10-23T17:32:01+08:00">2020-10-23</time>
+                <time title="修改时间：2020-10-23 17:31:08" itemprop="dateModified" datetime="2020-10-23T17:31:08+08:00">2020-10-23</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -825,18 +888,124 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h2 id="安装vsCode"><a href="#安装vsCode" class="headerlink" title="安装vsCode"></a>安装vsCode</h2><p><a target="_blank" rel="noopener" href="https://code.visualstudio.com/">VSCode</a></p>
-<h2 id="安装C-C-扩展"><a href="#安装C-C-扩展" class="headerlink" title="安装C/C++扩展"></a>安装C/C++扩展</h2><h2 id="安装编译环境mingw-w64"><a href="#安装编译环境mingw-w64" class="headerlink" title="安装编译环境mingw-w64"></a>安装编译环境mingw-w64</h2><p><a target="_blank" rel="noopener" href="http://www.mingw-w64.org/doku.php/download">mingw-w64</a><br>安装完毕之后，配置环境变量，此电脑-属性-高级系统设置-环境变量-系统变量-path-添加一条D:\mingw\mingw32\bin\（你安装的编译环境的地址）</p>
-<h2 id="配置VScode"><a href="#配置VScode" class="headerlink" title="配置VScode"></a>配置VScode</h2><p>launch.json</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    &quot;version&quot;: &quot;0.2.0&quot;,</span><br><span class="line">    &quot;configurations&quot;: [</span><br><span class="line"></span><br><span class="line">        &#123;</span><br><span class="line">            &quot;name&quot;: &quot;(gdb) Launch&quot;,    &#x2F;&#x2F; 配置名称，将会在启动配置的下拉菜单中显示</span><br><span class="line">            &quot;type&quot;: &quot;cppdbg&quot;,         &#x2F;&#x2F; 配置类型，这里只能为cppdbg</span><br><span class="line">            &quot;request&quot;: &quot;launch&quot;,    &#x2F;&#x2F; 请求配置类型，可以为launch（启动）或attach（附加）</span><br><span class="line">            &quot;program&quot;: &quot;$&#123;workspaceRoot&#125;&#x2F;$&#123;fileBasenameNoExtension&#125;.exe&quot;,&#x2F;&#x2F; 将要进行调试的程序的路径</span><br><span class="line">            &quot;args&quot;: [],                &#x2F;&#x2F; 程序调试时传递给程序的命令行参数，一般设为空即可</span><br><span class="line">            &quot;stopAtEntry&quot;: false,     &#x2F;&#x2F; 设为true时程序将暂停在程序入口处，一般设置为false</span><br><span class="line">            &quot;cwd&quot;: &quot;$&#123;workspaceRoot&#125;&quot;,&#x2F;&#x2F; 调试程序时的工作目录，一般为$&#123;workspaceRoot&#125;即代码所在目录</span><br><span class="line">            &quot;environment&quot;: [],</span><br><span class="line">            &quot;externalConsole&quot;: true,&#x2F;&#x2F; 调试时是否显示控制台窗口，一般设置为true显示控制台</span><br><span class="line">            &quot;MIMode&quot;: &quot;gdb&quot;,</span><br><span class="line">            &quot;miDebuggerPath&quot;: &quot;D:\\MinGW\\bin\\gdb.exe&quot;,&#x2F;&#x2F; miDebugger的路径，注意这里要与MinGw的路径对应</span><br><span class="line">            &quot;preLaunchTask&quot;: &quot;g++&quot;,    &#x2F;&#x2F; 调试会话开始前执行的任务，一般为编译程序，c++为g++, c为gcc</span><br><span class="line">            &quot;setupCommands&quot;: [</span><br><span class="line">                &#123;</span><br><span class="line">                    &quot;description&quot;: &quot;Enable pretty-printing for gdb&quot;,</span><br><span class="line">                    &quot;text&quot;: &quot;-enable-pretty-printing&quot;,</span><br><span class="line">                    &quot;ignoreFailures&quot;: true</span><br><span class="line">                &#125;</span><br><span class="line">            ]</span><br><span class="line">        &#125;</span><br><span class="line">    ]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>task.json</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">        &quot;version&quot;: &quot;2.0.0&quot;,</span><br><span class="line">        &quot;command&quot;: &quot;g++&quot;,</span><br><span class="line">        &quot;args&quot;: [</span><br><span class="line">            &quot;-g&quot;,</span><br><span class="line">            &quot;$&#123;file&#125;&quot;,</span><br><span class="line">            &quot;-o&quot;,</span><br><span class="line">            &quot;$&#123;fileDirname&#125;&#x2F;$&#123;fileBasenameNoExtension&#125;.exe&quot;</span><br><span class="line">        ],</span><br><span class="line">        &quot;problemMatcher&quot;: &#123;</span><br><span class="line">            &quot;owner&quot;: &quot;cpp&quot;,</span><br><span class="line">            &quot;fileLocation&quot;: [</span><br><span class="line">                &quot;relative&quot;,</span><br><span class="line">                &quot;$&#123;workspaceRoot&#125;&quot;</span><br><span class="line">            ],</span><br><span class="line">            &quot;pattern&quot;: &#123;</span><br><span class="line">                &quot;regexp&quot;: &quot;^(.*):(\\d+):(\\d+):\\s+(warning|error):\\s+(.*)$&quot;,</span><br><span class="line">                &quot;file&quot;: 1,</span><br><span class="line">                &quot;line&quot;: 2,</span><br><span class="line">                &quot;column&quot;: 3,</span><br><span class="line">                &quot;severity&quot;: 4,</span><br><span class="line">                &quot;message&quot;: 5</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;,</span><br><span class="line">        &quot;group&quot;: &#123;</span><br><span class="line">            &quot;kind&quot;: &quot;build&quot;,</span><br><span class="line">            &quot;isDefault&quot;: true</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+          <h2 id="所需环境"><a href="#所需环境" class="headerlink" title="所需环境"></a>所需环境</h2><p>Windows10<br>npm 6.14.6<br>node.js v12.18.4<br>git<br>hexo</p>
+<h2 id="安装Node-js"><a href="#安装Node-js" class="headerlink" title="安装Node.js"></a>安装Node.js</h2><p><a target="_blank" rel="noopener" href="https://nodejs.org/en/download/">Node.js</a><br>查看版本</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">node -v</span><br><span class="line">npm -v</span><br></pre></td></tr></table></figure>
+
+<h2 id="hexo"><a href="#hexo" class="headerlink" title="hexo"></a>hexo</h2><h3 id="安装hexo"><a href="#安装hexo" class="headerlink" title="安装hexo"></a>安装hexo</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
+<h3 id="初始化"><a href="#初始化" class="headerlink" title="初始化"></a>初始化</h3><p><font color='red'>cd</font>到一个指定目录</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init blog</span><br></pre></td></tr></table></figure>
+<p><font color='red'>blog</font>是将要建立文件夹的名字<br><font color='red'>cd</font>到<font color='red'>blog</font>下面，安装npm</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install</span><br></pre></td></tr></table></figure>
+<p>开启本地服务器</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo s</span><br></pre></td></tr></table></figure>
+<p>此时，浏览器中打开网址(默认是4000端口) <a target="_blank" rel="noopener" href="http://localhost:4000/">http://localhost:4000</a><br>至此播客一搭建成功，接下来配置github</p>
+<h2 id="配置github"><a href="#配置github" class="headerlink" title="配置github"></a>配置github</h2><p>创建名为<font color='red'>xxx.github.io</font>的仓库，README初始化也要勾上，名称要与github名称一样，你如github名称为ttg1025，那么仓库就要名为ttg1025.github.io</p>
+<p>点击<font color='red'>settings</font>，向下拉到最后有一个<font color='red'> Github Pages </font>，点击<font color='red'> choose a theme </font>选择一个主题.</p>
+<p>打开仓库添加一个index.html,随便写点内容<br>打开地址<a target="_blank" rel="noopener" href="http://ttg1025.github.io就可以看到了/">http://ttg1025.github.io就可以看到了</a></p>
+<h2 id="配置ssh-key"><a href="#配置ssh-key" class="headerlink" title="配置ssh key"></a>配置ssh key</h2><p>git教程就不再赘述</p>
+<h2 id="部署到github"><a href="#部署到github" class="headerlink" title="部署到github"></a>部署到github</h2><p>连接本地和github</p>
+<h3 id="修改根目录下的-config-yml"><a href="#修改根目录下的-config-yml" class="headerlink" title="修改根目录下的 _config.yml "></a>修改根目录下的<font color='red'> _config.yml </font></h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy: </span><br><span class="line">  type: git</span><br><span class="line">  repository: git@github.com:ttg1025&#x2F;ttg1025.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
+<h3 id="安装部署插件-hexo-deployer-git"><a href="#安装部署插件-hexo-deployer-git" class="headerlink" title="安装部署插件 hexo-deployer-git"></a>安装部署插件<font color='red'> hexo-deployer-git</font></h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
+<p>执行以下命令发布</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo d -g</span><br></pre></td></tr></table></figure>
+<p>打开地址<a target="_blank" rel="noopener" href="http://ttg1025.github.io就可以看到了/">http://ttg1025.github.io就可以看到了</a></p>
+<h2 id="绑定域名"><a href="#绑定域名" class="headerlink" title="绑定域名"></a>绑定域名</h2><h3 id="阿里云解析域名"><a href="#阿里云解析域名" class="headerlink" title="阿里云解析域名"></a>阿里云解析域名</h3><p>在阿里云购买域名后，解析域名</p>
+<h3 id="github绑定域名"><a href="#github绑定域名" class="headerlink" title="github绑定域名"></a>github绑定域名</h3><p>点击github仓库中的settings，拉到github上的Github Pages，填上购买的域名<br>点击保存后，Github Pages会自动生成一个CNAME，CNAME中填写的就是域名</p>
+<h2 id="常用指令"><a href="#常用指令" class="headerlink" title="常用指令"></a>常用指令</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">hexo new &quot;postName&quot;        &#x2F;&#x2F;新建文章</span><br><span class="line">hexo new page &quot;pageName&quot;        &#x2F;&#x2F;新建页面</span><br><span class="line">hexo g          &#x2F;&#x2F;生成静态页面至public目录</span><br><span class="line">hexo server         &#x2F;&#x2F;开启预览访问端口（默认端口4000，&#39;ctrl + c&#39;关闭server）</span><br><span class="line">hexo deploy         &#x2F;&#x2F;将.deploy目录部署到GitHub</span><br></pre></td></tr></table></figure>
+<h2 id="常用组合"><a href="#常用组合" class="headerlink" title="常用组合"></a>常用组合</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
 
 
 
+      
+    </div>
 
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
 
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2020/09/26/hexo%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0%E5%88%86%E7%B1%BB%E3%80%81%E6%A0%87%E7%AD%BE/">
 
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/gtt.jpg">
+      <meta itemprop="name" content="gtt1025">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="程序人生">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/09/26/hexo%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0%E5%88%86%E7%B1%BB%E3%80%81%E6%A0%87%E7%AD%BE/" class="post-title-link" itemprop="url">hexo博客添加分类、标签</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-09-26 12:12:57" itemprop="dateCreated datePublished" datetime="2020-09-26T12:12:57+08:00">2020-09-26</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-10-23 17:39:18" itemprop="dateModified" datetime="2020-10-23T17:39:18+08:00">2020-10-23</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%B7%A5%E5%85%B7%E9%83%A8%E7%BD%B2/" itemprop="url" rel="index"><span itemprop="name">工具部署</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="创建”分类”标签"><a href="#创建”分类”标签" class="headerlink" title="创建”分类”标签"></a>创建”分类”标签</h2><p>进入博客根目录，执行命令</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new page categories</span><br></pre></td></tr></table></figure>
+<p>成功后，会生成index.md,打开后添加<br>type: “categories”</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: categories</span><br><span class="line">date: 2020-10-20 09:58:59</span><br><span class="line">type: &quot;categories&quot;</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+<p>给文章添加分类属性</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: Hello World</span><br><span class="line">date: 2020-09-26 12:12:57</span><br><span class="line">categories: </span><br><span class="line">- 测试</span><br><span class="line"></span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+<h2 id="创建”标签”目录"><a href="#创建”标签”目录" class="headerlink" title="创建”标签”目录"></a>创建”标签”目录</h2><p>进入博客根目录，执行命令</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new page tags</span><br></pre></td></tr></table></figure>
+<p>成功后，会生成index.md,打开后添加<br>type: “tags”</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: tags</span><br><span class="line">date: 2020-10-20 09:58:59</span><br><span class="line">type: &quot;tags&quot;</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+<p>给文章添加标签属性</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: Hello World</span><br><span class="line">date: 2020-09-26 12:12:57</span><br><span class="line">categories: </span><br><span class="line">- 测试</span><br><span class="line">tags:</span><br><span class="line">- HelloWorld</span><br><span class="line"></span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+<h2 id="添加”关于”页面"><a href="#添加”关于”页面" class="headerlink" title="添加”关于”页面"></a>添加”关于”页面</h2><p>执行命令</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new page &quot;about&quot;</span><br></pre></td></tr></table></figure>
+<p>更改主题配置文件</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">menu:</span><br><span class="line">  home: &#x2F; || fa fa-home</span><br><span class="line">  about: &#x2F;about&#x2F; || fa fa-user</span><br><span class="line">  tags: &#x2F;tags&#x2F; || fa fa-tags</span><br><span class="line">  categories: &#x2F;categories&#x2F; || fa fa-th</span><br><span class="line">  archives: &#x2F;archives&#x2F; || fa fa-archive</span><br><span class="line">  #schedule: &#x2F;schedule&#x2F; || fa fa-calendar</span><br><span class="line">  #sitemap: &#x2F;sitemap.xml || fa fa-sitemap</span><br><span class="line">  #commonweal: &#x2F;404&#x2F; || fa fa-heartbeat</span><br><span class="line">  # schedule: &#x2F;schedule&#x2F; || calendar # 日历</span><br><span class="line">  # sitemap: &#x2F;sitemap.xml || sitemap # 站点地图</span><br><span class="line">  # commonweal: &#x2F;404&#x2F; || heartbeat # 腾讯公益404</span><br></pre></td></tr></table></figure>
+<p>然后修改source/about/目录中的index.md文件即可</p>
 
       
     </div>
@@ -1009,7 +1178,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">8</span>
+          <span class="site-state-item-count">10</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
